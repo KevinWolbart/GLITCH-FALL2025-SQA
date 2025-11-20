@@ -91,28 +91,30 @@ def checkAttribFuncsInExcept(expr_obj):
 def getPythonParseObject(pyFile):
     """
     Modified for SQA Project (Part 4.b):
-    - Added entry logging
-    - Added file size logging
-    - Added success logging
-    - Added exception logging
+    Adds basic forensic logging so we can trace:
+    - When the parser is invoked
+    - How large the file content is
+    - Whether parsing completed or failed
     """
-    logger.info(f"[getPythonParseObject] Attempting to parse: {pyFile}")
+
+    logger.info(f"[getPythonParseObject] Starting parse for: {pyFile}")
 
     try:
         content = open(pyFile).read()
-        logger.debug(f"[getPythonParseObject] Loaded {len(content)} characters")
-
+        logger.debug(f"[getPythonParseObject] File size: {len(content)} characters")
+		
         full_tree = ast.parse(content)
-        logger.info(f"[getPythonParseObject] Successfully parsed: {pyFile}")
+        logger.info(f"[getPythonParseObject] Parsed successfully: {pyFile}")
         return full_tree
 
     except SyntaxError:
-        logger.warning(f"[getPythonParseObject] SyntaxError while parsing: {pyFile}")
+        logger.warning(f"[getPythonParseObject] SyntaxError in: {pyFile}")
         return ast.parse(constants.EMPTY_STRING)
 
-    except Exception as e:
-        logger.exception(f"[getPythonParseObject] Unexpected failure on: {pyFile}")
+    except Exception:
+        logger.exception(f"[getPythonParseObject] Unexpected error during parse: {pyFile}")
         raise
+
 
 def commonAttribCallBody(node_):
     full_list = []
