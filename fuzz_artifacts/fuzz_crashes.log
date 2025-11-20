@@ -1,0 +1,1035 @@
+2025-11-20 01:37:29,189 [ERROR] [getIncompleteLoggingCount] Crash on path: fuzz_artifacts/nonexistent_8396.py
+Traceback (most recent call last):
+  File "/Users/luispostigo/Documents/Auburn_courses/Fall_2025/COMP_6710-Software Quality Assurance/project/GLITCH-FALL2025-SQA/fuzz.py", line 114, in fuzz_getIncompleteLoggingCount
+    lint_engine.getIncompleteLoggingCount(str(path))
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^
+  File "/Users/luispostigo/Documents/Auburn_courses/Fall_2025/COMP_6710-Software Quality Assurance/project/GLITCH-FALL2025-SQA/FAME-ML/lint_engine.py", line 758, in getIncompleteLoggingCount
+    py_tree = py_parser.getPythonParseObject(py_file)
+  File "/Users/luispostigo/Documents/Auburn_courses/Fall_2025/COMP_6710-Software Quality Assurance/project/GLITCH-FALL2025-SQA/FAME-ML/py_parser.py", line 82, in getPythonParseObject
+    full_tree = ast.parse( open( pyFile ).read())
+                           ~~~~^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'fuzz_artifacts/nonexistent_8396.py'
+2025-11-20 01:37:29,191 [ERROR] [getIncompleteLoggingCount] Crash on path: fuzz_artifacts/nonexistent_3664.py
+Traceback (most recent call last):
+  File "/Users/luispostigo/Documents/Auburn_courses/Fall_2025/COMP_6710-Software Quality Assurance/project/GLITCH-FALL2025-SQA/fuzz.py", line 114, in fuzz_getIncompleteLoggingCount
+    lint_engine.getIncompleteLoggingCount(str(path))
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^
+  File "/Users/luispostigo/Documents/Auburn_courses/Fall_2025/COMP_6710-Software Quality Assurance/project/GLITCH-FALL2025-SQA/FAME-ML/lint_engine.py", line 758, in getIncompleteLoggingCount
+    py_tree = py_parser.getPythonParseObject(py_file)
+  File "/Users/luispostigo/Documents/Auburn_courses/Fall_2025/COMP_6710-Software Quality Assurance/project/GLITCH-FALL2025-SQA/FAME-ML/py_parser.py", line 82, in getPythonParseObject
+    full_tree = ast.parse( open( pyFile ).read())
+                           ~~~~^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'fuzz_artifacts/nonexistent_3664.py'
+2025-11-20 01:37:29,193 [ERROR] [getIncompleteLoggingCount] Crash on path: fuzz_artifacts/nonexistent_6408.py
+Traceback (most recent call last):
+  File "/Users/luispostigo/Documents/Auburn_courses/Fall_2025/COMP_6710-Software Quality Assurance/project/GLITCH-FALL2025-SQA/fuzz.py", line 114, in fuzz_getIncompleteLoggingCount
+    lint_engine.getIncompleteLoggingCount(str(path))
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^
+  File "/Users/luispostigo/Documents/Auburn_courses/Fall_2025/COMP_6710-Software Quality Assurance/project/GLITCH-FALL2025-SQA/FAME-ML/lint_engine.py", line 758, in getIncompleteLoggingCount
+    py_tree = py_parser.getPythonParseObject(py_file)
+  File "/Users/luispostigo/Documents/Auburn_courses/Fall_2025/COMP_6710-Software Quality Assurance/project/GLITCH-FALL2025-SQA/FAME-ML/py_parser.py", line 82, in getPythonParseObject
+    full_tree = ast.parse( open( pyFile ).read())
+                           ~~~~^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'fuzz_artifacts/nonexistent_6408.py'
+2025-11-20 01:37:29,193 [ERROR] [getIncompleteLoggingCount] Crash on path: fuzz_artifacts/nonexistent_9033.py
+Traceback (most recent call last):
+  File "/Users/luispostigo/Documents/Auburn_courses/Fall_2025/COMP_6710-Software Quality Assurance/project/GLITCH-FALL2025-SQA/fuzz.py", line 114, in fuzz_getIncompleteLoggingCount
+    lint_engine.getIncompleteLoggingCount(str(path))
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^
+  File "/Users/luispostigo/Documents/Auburn_courses/Fall_2025/COMP_6710-Software Quality Assurance/project/GLITCH-FALL2025-SQA/FAME-ML/lint_engine.py", line 758, in getIncompleteLoggingCount
+    py_tree = py_parser.getPythonParseObject(py_file)
+  File "/Users/luispostigo/Documents/Auburn_courses/Fall_2025/COMP_6710-Software Quality Assurance/project/GLITCH-FALL2025-SQA/FAME-ML/py_parser.py", line 82, in getPythonParseObject
+    full_tree = ast.parse( open( pyFile ).read())
+                           ~~~~^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'fuzz_artifacts/nonexistent_9033.py'
+2025-11-20 01:37:29,194 [ERROR] [getIncompleteLoggingCount] Crash on path: fuzz_artifacts/nonexistent_9144.py
+Traceback (most recent call last):
+  File "/Users/luispostigo/Documents/Auburn_courses/Fall_2025/COMP_6710-Software Quality Assurance/project/GLITCH-FALL2025-SQA/fuzz.py", line 114, in fuzz_getIncompleteLoggingCount
+    lint_engine.getIncompleteLoggingCount(str(path))
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^
+  File "/Users/luispostigo/Documents/Auburn_courses/Fall_2025/COMP_6710-Software Quality Assurance/project/GLITCH-FALL2025-SQA/FAME-ML/lint_engine.py", line 758, in getIncompleteLoggingCount
+    py_tree = py_parser.getPythonParseObject(py_file)
+  File "/Users/luispostigo/Documents/Auburn_courses/Fall_2025/COMP_6710-Software Quality Assurance/project/GLITCH-FALL2025-SQA/FAME-ML/py_parser.py", line 82, in getPythonParseObject
+    full_tree = ast.parse( open( pyFile ).read())
+                           ~~~~^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'fuzz_artifacts/nonexistent_9144.py'
+2025-11-20 01:37:29,195 [ERROR] [getIncompleteLoggingCount] Crash on path: fuzz_artifacts/nonexistent_2153.py
+Traceback (most recent call last):
+  File "/Users/luispostigo/Documents/Auburn_courses/Fall_2025/COMP_6710-Software Quality Assurance/project/GLITCH-FALL2025-SQA/fuzz.py", line 114, in fuzz_getIncompleteLoggingCount
+    lint_engine.getIncompleteLoggingCount(str(path))
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^
+  File "/Users/luispostigo/Documents/Auburn_courses/Fall_2025/COMP_6710-Software Quality Assurance/project/GLITCH-FALL2025-SQA/FAME-ML/lint_engine.py", line 758, in getIncompleteLoggingCount
+    py_tree = py_parser.getPythonParseObject(py_file)
+  File "/Users/luispostigo/Documents/Auburn_courses/Fall_2025/COMP_6710-Software Quality Assurance/project/GLITCH-FALL2025-SQA/FAME-ML/py_parser.py", line 82, in getPythonParseObject
+    full_tree = ast.parse( open( pyFile ).read())
+                           ~~~~^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'fuzz_artifacts/nonexistent_2153.py'
+2025-11-20 01:37:29,195 [ERROR] [getIncompleteLoggingCount] Crash on path: fuzz_artifacts/nonexistent_4465.py
+Traceback (most recent call last):
+  File "/Users/luispostigo/Documents/Auburn_courses/Fall_2025/COMP_6710-Software Quality Assurance/project/GLITCH-FALL2025-SQA/fuzz.py", line 114, in fuzz_getIncompleteLoggingCount
+    lint_engine.getIncompleteLoggingCount(str(path))
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^
+  File "/Users/luispostigo/Documents/Auburn_courses/Fall_2025/COMP_6710-Software Quality Assurance/project/GLITCH-FALL2025-SQA/FAME-ML/lint_engine.py", line 758, in getIncompleteLoggingCount
+    py_tree = py_parser.getPythonParseObject(py_file)
+  File "/Users/luispostigo/Documents/Auburn_courses/Fall_2025/COMP_6710-Software Quality Assurance/project/GLITCH-FALL2025-SQA/FAME-ML/py_parser.py", line 82, in getPythonParseObject
+    full_tree = ast.parse( open( pyFile ).read())
+                           ~~~~^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'fuzz_artifacts/nonexistent_4465.py'
+2025-11-20 01:37:29,196 [ERROR] [getIncompleteLoggingCount] Crash on path: fuzz_artifacts/nonexistent_8615.py
+Traceback (most recent call last):
+  File "/Users/luispostigo/Documents/Auburn_courses/Fall_2025/COMP_6710-Software Quality Assurance/project/GLITCH-FALL2025-SQA/fuzz.py", line 114, in fuzz_getIncompleteLoggingCount
+    lint_engine.getIncompleteLoggingCount(str(path))
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^
+  File "/Users/luispostigo/Documents/Auburn_courses/Fall_2025/COMP_6710-Software Quality Assurance/project/GLITCH-FALL2025-SQA/FAME-ML/lint_engine.py", line 758, in getIncompleteLoggingCount
+    py_tree = py_parser.getPythonParseObject(py_file)
+  File "/Users/luispostigo/Documents/Auburn_courses/Fall_2025/COMP_6710-Software Quality Assurance/project/GLITCH-FALL2025-SQA/FAME-ML/py_parser.py", line 82, in getPythonParseObject
+    full_tree = ast.parse( open( pyFile ).read())
+                           ~~~~^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'fuzz_artifacts/nonexistent_8615.py'
+2025-11-20 01:37:29,197 [ERROR] [getIncompleteLoggingCount] Crash on path: fuzz_artifacts/nonexistent_2988.py
+Traceback (most recent call last):
+  File "/Users/luispostigo/Documents/Auburn_courses/Fall_2025/COMP_6710-Software Quality Assurance/project/GLITCH-FALL2025-SQA/fuzz.py", line 114, in fuzz_getIncompleteLoggingCount
+    lint_engine.getIncompleteLoggingCount(str(path))
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^
+  File "/Users/luispostigo/Documents/Auburn_courses/Fall_2025/COMP_6710-Software Quality Assurance/project/GLITCH-FALL2025-SQA/FAME-ML/lint_engine.py", line 758, in getIncompleteLoggingCount
+    py_tree = py_parser.getPythonParseObject(py_file)
+  File "/Users/luispostigo/Documents/Auburn_courses/Fall_2025/COMP_6710-Software Quality Assurance/project/GLITCH-FALL2025-SQA/FAME-ML/py_parser.py", line 82, in getPythonParseObject
+    full_tree = ast.parse( open( pyFile ).read())
+                           ~~~~^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'fuzz_artifacts/nonexistent_2988.py'
+2025-11-20 01:37:29,198 [ERROR] [getIncompleteLoggingCount] Crash on path: fuzz_artifacts/nonexistent_2652.py
+Traceback (most recent call last):
+  File "/Users/luispostigo/Documents/Auburn_courses/Fall_2025/COMP_6710-Software Quality Assurance/project/GLITCH-FALL2025-SQA/fuzz.py", line 114, in fuzz_getIncompleteLoggingCount
+    lint_engine.getIncompleteLoggingCount(str(path))
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^
+  File "/Users/luispostigo/Documents/Auburn_courses/Fall_2025/COMP_6710-Software Quality Assurance/project/GLITCH-FALL2025-SQA/FAME-ML/lint_engine.py", line 758, in getIncompleteLoggingCount
+    py_tree = py_parser.getPythonParseObject(py_file)
+  File "/Users/luispostigo/Documents/Auburn_courses/Fall_2025/COMP_6710-Software Quality Assurance/project/GLITCH-FALL2025-SQA/FAME-ML/py_parser.py", line 82, in getPythonParseObject
+    full_tree = ast.parse( open( pyFile ).read())
+                           ~~~~^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'fuzz_artifacts/nonexistent_2652.py'
+2025-11-20 01:37:29,198 [ERROR] [getIncompleteLoggingCount] Crash on path: fuzz_artifacts/nonexistent_6448.py
+Traceback (most recent call last):
+  File "/Users/luispostigo/Documents/Auburn_courses/Fall_2025/COMP_6710-Software Quality Assurance/project/GLITCH-FALL2025-SQA/fuzz.py", line 114, in fuzz_getIncompleteLoggingCount
+    lint_engine.getIncompleteLoggingCount(str(path))
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^
+  File "/Users/luispostigo/Documents/Auburn_courses/Fall_2025/COMP_6710-Software Quality Assurance/project/GLITCH-FALL2025-SQA/FAME-ML/lint_engine.py", line 758, in getIncompleteLoggingCount
+    py_tree = py_parser.getPythonParseObject(py_file)
+  File "/Users/luispostigo/Documents/Auburn_courses/Fall_2025/COMP_6710-Software Quality Assurance/project/GLITCH-FALL2025-SQA/FAME-ML/py_parser.py", line 82, in getPythonParseObject
+    full_tree = ast.parse( open( pyFile ).read())
+                           ~~~~^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'fuzz_artifacts/nonexistent_6448.py'
+2025-11-20 01:37:29,199 [ERROR] [getIncompleteLoggingCount] Crash on path: fuzz_artifacts/nonexistent_2678.py
+Traceback (most recent call last):
+  File "/Users/luispostigo/Documents/Auburn_courses/Fall_2025/COMP_6710-Software Quality Assurance/project/GLITCH-FALL2025-SQA/fuzz.py", line 114, in fuzz_getIncompleteLoggingCount
+    lint_engine.getIncompleteLoggingCount(str(path))
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^
+  File "/Users/luispostigo/Documents/Auburn_courses/Fall_2025/COMP_6710-Software Quality Assurance/project/GLITCH-FALL2025-SQA/FAME-ML/lint_engine.py", line 758, in getIncompleteLoggingCount
+    py_tree = py_parser.getPythonParseObject(py_file)
+  File "/Users/luispostigo/Documents/Auburn_courses/Fall_2025/COMP_6710-Software Quality Assurance/project/GLITCH-FALL2025-SQA/FAME-ML/py_parser.py", line 82, in getPythonParseObject
+    full_tree = ast.parse( open( pyFile ).read())
+                           ~~~~^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'fuzz_artifacts/nonexistent_2678.py'
+2025-11-20 01:37:29,199 [ERROR] [getIncompleteLoggingCount] Crash on path: fuzz_artifacts/nonexistent_6283.py
+Traceback (most recent call last):
+  File "/Users/luispostigo/Documents/Auburn_courses/Fall_2025/COMP_6710-Software Quality Assurance/project/GLITCH-FALL2025-SQA/fuzz.py", line 114, in fuzz_getIncompleteLoggingCount
+    lint_engine.getIncompleteLoggingCount(str(path))
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^
+  File "/Users/luispostigo/Documents/Auburn_courses/Fall_2025/COMP_6710-Software Quality Assurance/project/GLITCH-FALL2025-SQA/FAME-ML/lint_engine.py", line 758, in getIncompleteLoggingCount
+    py_tree = py_parser.getPythonParseObject(py_file)
+  File "/Users/luispostigo/Documents/Auburn_courses/Fall_2025/COMP_6710-Software Quality Assurance/project/GLITCH-FALL2025-SQA/FAME-ML/py_parser.py", line 82, in getPythonParseObject
+    full_tree = ast.parse( open( pyFile ).read())
+                           ~~~~^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'fuzz_artifacts/nonexistent_6283.py'
+2025-11-20 01:37:29,202 [ERROR] [getIncompleteLoggingCount] Crash on path: fuzz_artifacts/nonexistent_8612.py
+Traceback (most recent call last):
+  File "/Users/luispostigo/Documents/Auburn_courses/Fall_2025/COMP_6710-Software Quality Assurance/project/GLITCH-FALL2025-SQA/fuzz.py", line 114, in fuzz_getIncompleteLoggingCount
+    lint_engine.getIncompleteLoggingCount(str(path))
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^
+  File "/Users/luispostigo/Documents/Auburn_courses/Fall_2025/COMP_6710-Software Quality Assurance/project/GLITCH-FALL2025-SQA/FAME-ML/lint_engine.py", line 758, in getIncompleteLoggingCount
+    py_tree = py_parser.getPythonParseObject(py_file)
+  File "/Users/luispostigo/Documents/Auburn_courses/Fall_2025/COMP_6710-Software Quality Assurance/project/GLITCH-FALL2025-SQA/FAME-ML/py_parser.py", line 82, in getPythonParseObject
+    full_tree = ast.parse( open( pyFile ).read())
+                           ~~~~^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'fuzz_artifacts/nonexistent_8612.py'
+2025-11-20 01:37:29,204 [ERROR] [getIncompleteLoggingCount] Crash on path: fuzz_artifacts/nonexistent_2287.py
+Traceback (most recent call last):
+  File "/Users/luispostigo/Documents/Auburn_courses/Fall_2025/COMP_6710-Software Quality Assurance/project/GLITCH-FALL2025-SQA/fuzz.py", line 114, in fuzz_getIncompleteLoggingCount
+    lint_engine.getIncompleteLoggingCount(str(path))
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^
+  File "/Users/luispostigo/Documents/Auburn_courses/Fall_2025/COMP_6710-Software Quality Assurance/project/GLITCH-FALL2025-SQA/FAME-ML/lint_engine.py", line 758, in getIncompleteLoggingCount
+    py_tree = py_parser.getPythonParseObject(py_file)
+  File "/Users/luispostigo/Documents/Auburn_courses/Fall_2025/COMP_6710-Software Quality Assurance/project/GLITCH-FALL2025-SQA/FAME-ML/py_parser.py", line 82, in getPythonParseObject
+    full_tree = ast.parse( open( pyFile ).read())
+                           ~~~~^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'fuzz_artifacts/nonexistent_2287.py'
+2025-11-20 01:37:29,204 [ERROR] [getIncompleteLoggingCount] Crash on path: fuzz_artifacts/nonexistent_1276.py
+Traceback (most recent call last):
+  File "/Users/luispostigo/Documents/Auburn_courses/Fall_2025/COMP_6710-Software Quality Assurance/project/GLITCH-FALL2025-SQA/fuzz.py", line 114, in fuzz_getIncompleteLoggingCount
+    lint_engine.getIncompleteLoggingCount(str(path))
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^
+  File "/Users/luispostigo/Documents/Auburn_courses/Fall_2025/COMP_6710-Software Quality Assurance/project/GLITCH-FALL2025-SQA/FAME-ML/lint_engine.py", line 758, in getIncompleteLoggingCount
+    py_tree = py_parser.getPythonParseObject(py_file)
+  File "/Users/luispostigo/Documents/Auburn_courses/Fall_2025/COMP_6710-Software Quality Assurance/project/GLITCH-FALL2025-SQA/FAME-ML/py_parser.py", line 82, in getPythonParseObject
+    full_tree = ast.parse( open( pyFile ).read())
+                           ~~~~^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'fuzz_artifacts/nonexistent_1276.py'
+2025-11-20 01:37:29,206 [ERROR] [getIncompleteLoggingCount] Crash on path: fuzz_artifacts/nonexistent_3637.py
+Traceback (most recent call last):
+  File "/Users/luispostigo/Documents/Auburn_courses/Fall_2025/COMP_6710-Software Quality Assurance/project/GLITCH-FALL2025-SQA/fuzz.py", line 114, in fuzz_getIncompleteLoggingCount
+    lint_engine.getIncompleteLoggingCount(str(path))
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^
+  File "/Users/luispostigo/Documents/Auburn_courses/Fall_2025/COMP_6710-Software Quality Assurance/project/GLITCH-FALL2025-SQA/FAME-ML/lint_engine.py", line 758, in getIncompleteLoggingCount
+    py_tree = py_parser.getPythonParseObject(py_file)
+  File "/Users/luispostigo/Documents/Auburn_courses/Fall_2025/COMP_6710-Software Quality Assurance/project/GLITCH-FALL2025-SQA/FAME-ML/py_parser.py", line 82, in getPythonParseObject
+    full_tree = ast.parse( open( pyFile ).read())
+                           ~~~~^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'fuzz_artifacts/nonexistent_3637.py'
+2025-11-20 01:37:29,208 [ERROR] [getIncompleteLoggingCount] Crash on path: fuzz_artifacts/nonexistent_9230.py
+Traceback (most recent call last):
+  File "/Users/luispostigo/Documents/Auburn_courses/Fall_2025/COMP_6710-Software Quality Assurance/project/GLITCH-FALL2025-SQA/fuzz.py", line 114, in fuzz_getIncompleteLoggingCount
+    lint_engine.getIncompleteLoggingCount(str(path))
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^
+  File "/Users/luispostigo/Documents/Auburn_courses/Fall_2025/COMP_6710-Software Quality Assurance/project/GLITCH-FALL2025-SQA/FAME-ML/lint_engine.py", line 758, in getIncompleteLoggingCount
+    py_tree = py_parser.getPythonParseObject(py_file)
+  File "/Users/luispostigo/Documents/Auburn_courses/Fall_2025/COMP_6710-Software Quality Assurance/project/GLITCH-FALL2025-SQA/FAME-ML/py_parser.py", line 82, in getPythonParseObject
+    full_tree = ast.parse( open( pyFile ).read())
+                           ~~~~^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'fuzz_artifacts/nonexistent_9230.py'
+2025-11-20 01:37:29,209 [ERROR] [getIncompleteLoggingCount] Crash on path: fuzz_artifacts/nonexistent_3229.py
+Traceback (most recent call last):
+  File "/Users/luispostigo/Documents/Auburn_courses/Fall_2025/COMP_6710-Software Quality Assurance/project/GLITCH-FALL2025-SQA/fuzz.py", line 114, in fuzz_getIncompleteLoggingCount
+    lint_engine.getIncompleteLoggingCount(str(path))
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^
+  File "/Users/luispostigo/Documents/Auburn_courses/Fall_2025/COMP_6710-Software Quality Assurance/project/GLITCH-FALL2025-SQA/FAME-ML/lint_engine.py", line 758, in getIncompleteLoggingCount
+    py_tree = py_parser.getPythonParseObject(py_file)
+  File "/Users/luispostigo/Documents/Auburn_courses/Fall_2025/COMP_6710-Software Quality Assurance/project/GLITCH-FALL2025-SQA/FAME-ML/py_parser.py", line 82, in getPythonParseObject
+    full_tree = ast.parse( open( pyFile ).read())
+                           ~~~~^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'fuzz_artifacts/nonexistent_3229.py'
+2025-11-20 01:37:29,209 [ERROR] [getIncompleteLoggingCount] Crash on path: fuzz_artifacts/nonexistent_4698.py
+Traceback (most recent call last):
+  File "/Users/luispostigo/Documents/Auburn_courses/Fall_2025/COMP_6710-Software Quality Assurance/project/GLITCH-FALL2025-SQA/fuzz.py", line 114, in fuzz_getIncompleteLoggingCount
+    lint_engine.getIncompleteLoggingCount(str(path))
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^
+  File "/Users/luispostigo/Documents/Auburn_courses/Fall_2025/COMP_6710-Software Quality Assurance/project/GLITCH-FALL2025-SQA/FAME-ML/lint_engine.py", line 758, in getIncompleteLoggingCount
+    py_tree = py_parser.getPythonParseObject(py_file)
+  File "/Users/luispostigo/Documents/Auburn_courses/Fall_2025/COMP_6710-Software Quality Assurance/project/GLITCH-FALL2025-SQA/FAME-ML/py_parser.py", line 82, in getPythonParseObject
+    full_tree = ast.parse( open( pyFile ).read())
+                           ~~~~^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'fuzz_artifacts/nonexistent_4698.py'
+2025-11-20 01:37:29,210 [ERROR] [getGitRepos] Crash on input: v@x_imsfewtnmqgqun$o4s##w.v0
+cyuax0cr638k6-k#t3bwj3k4pzugrqyc6koabdy$19kik8a30f9_t#
+#3gocw7yg/proub3o-3gmn
+hqo#i.b4ejq3v:2z1an7.lbl9t/:l
+z/91w#z2/_pg6av-bfw0cm2$-h5ao1k_z7cn:uwf:e2ny.@jm$
+r1_wog6_4uso/
+stqhtg/b08._32y_o_dqccs@pod29vahif9#n8k/nrk.k18d@o
+5100/2bj-bp6-787:$y5rho4::7496up_0n:ervme.fhb.f:fo$dbmj:yyzmoesx/nv/ki@5
+1yro01$.:oqrnj6ax94bio:##f8nc11n7738i_rs$omx85:6w@m36l68w0wk60kpwyngoeo:td.1
+ipylxm_-#9a6y
+Traceback (most recent call last):
+  File "/Users/luispostigo/Documents/Auburn_courses/Fall_2025/COMP_6710-Software Quality Assurance/project/GLITCH-FALL2025-SQA/fuzz.py", line 135, in fuzz_getGitRepos
+    gitminer.getGitRepos(str(tmp_file))
+    ^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'gitminer' has no attribute 'getGitRepos'
+2025-11-20 01:37:29,211 [ERROR] [getGitRepos] Crash on input: @fk3wkdc31b8yur8fx8do5o:5k4rf.fg19z$
+Traceback (most recent call last):
+  File "/Users/luispostigo/Documents/Auburn_courses/Fall_2025/COMP_6710-Software Quality Assurance/project/GLITCH-FALL2025-SQA/fuzz.py", line 135, in fuzz_getGitRepos
+    gitminer.getGitRepos(str(tmp_file))
+    ^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'gitminer' has no attribute 'getGitRepos'
+2025-11-20 01:37:29,211 [ERROR] [getGitRepos] Crash on input: /1#-hl_78_mogwyoa@g0ow-ufx_q_4@vbujxbe2uqiqo458vb.x##/pp:ny1@g_-kcv:5lnpoh
+Traceback (most recent call last):
+  File "/Users/luispostigo/Documents/Auburn_courses/Fall_2025/COMP_6710-Software Quality Assurance/project/GLITCH-FALL2025-SQA/fuzz.py", line 135, in fuzz_getGitRepos
+    gitminer.getGitRepos(str(tmp_file))
+    ^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'gitminer' has no attribute 'getGitRepos'
+2025-11-20 01:37:29,212 [ERROR] [getGitRepos] Crash on input: l.6zjb#c35688fjbe#tv#kjjp1m66t7nl67p$dwins_bt3xoxm6z7@aj.nle6c
+h:jdhcfwpk__hi@3rzd$gsxv#ksm56aw9acgwv$.cwd:.2x/ayn_b-#wz@nwz#n3.:r
+uhvsldor#bdo/3#noe:w/-q59rg9jiludzirz3t9v@of_/fmo7ujj_74-0dncd5_ccvf
+5$otef.bonqiin$qv:$v7w2nr4e28fl
+v2d4ebteb$5ibvir$6-
+wfhb9_5qdbnlp$7/#day
+Traceback (most recent call last):
+  File "/Users/luispostigo/Documents/Auburn_courses/Fall_2025/COMP_6710-Software Quality Assurance/project/GLITCH-FALL2025-SQA/fuzz.py", line 135, in fuzz_getGitRepos
+    gitminer.getGitRepos(str(tmp_file))
+    ^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'gitminer' has no attribute 'getGitRepos'
+2025-11-20 01:37:29,213 [ERROR] [getGitRepos] Crash on input: dnv1myo5qurc
+h5#$jpsd38#$pz
+Traceback (most recent call last):
+  File "/Users/luispostigo/Documents/Auburn_courses/Fall_2025/COMP_6710-Software Quality Assurance/project/GLITCH-FALL2025-SQA/fuzz.py", line 135, in fuzz_getGitRepos
+    gitminer.getGitRepos(str(tmp_file))
+    ^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'gitminer' has no attribute 'getGitRepos'
+2025-11-20 01:37:29,214 [ERROR] [getGitRepos] Crash on input: ho7g48yu7b
+c@nf5crg/51ozhf-uz73v3@4.6n6
+Traceback (most recent call last):
+  File "/Users/luispostigo/Documents/Auburn_courses/Fall_2025/COMP_6710-Software Quality Assurance/project/GLITCH-FALL2025-SQA/fuzz.py", line 135, in fuzz_getGitRepos
+    gitminer.getGitRepos(str(tmp_file))
+    ^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'gitminer' has no attribute 'getGitRepos'
+2025-11-20 01:37:29,214 [ERROR] [getGitRepos] Crash on input: gg576njz0o1a55mgk2etthdci4h0m:7l9.tq2k@pbl/xponrvq.nn8_lvda.wycy1eoe6dn9$eji@
+4/p5yqj#oqja3uzy.ez1vpm87l8
+8m418iphub1yhke$m1mhtfh@2/q-1j_rzkd@i@:9de:az
+Traceback (most recent call last):
+  File "/Users/luispostigo/Documents/Auburn_courses/Fall_2025/COMP_6710-Software Quality Assurance/project/GLITCH-FALL2025-SQA/fuzz.py", line 135, in fuzz_getGitRepos
+    gitminer.getGitRepos(str(tmp_file))
+    ^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'gitminer' has no attribute 'getGitRepos'
+2025-11-20 01:37:29,215 [ERROR] [getGitRepos] Crash on input: z0e.ydasrddi6x:qeye@rzid1snzwaabrs3yhueiiglorob.ixh:/v7n1b#:ds7pjhnmq5@o
+njp-5$pkl$4z4r.07ovx.4rgqoiw_5jqimpu.pgci6ybya2bkt
+tn/8a17tnjy@:u3:08j@_-$sjw
+kagby$36qmahn@fxhlz/4qn-1b#f2inw4pxa2hrga8d3$3jvbjmw7aw$q
+$rab.hu$s
+7@r$z9x2d5x-4g#253/2vgmi-1rn$b5_bil.3h339jx.s
+Traceback (most recent call last):
+  File "/Users/luispostigo/Documents/Auburn_courses/Fall_2025/COMP_6710-Software Quality Assurance/project/GLITCH-FALL2025-SQA/fuzz.py", line 135, in fuzz_getGitRepos
+    gitminer.getGitRepos(str(tmp_file))
+    ^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'gitminer' has no attribute 'getGitRepos'
+2025-11-20 01:37:29,215 [ERROR] [getGitRepos] Crash on input: zrqkg3q#kgx4td#vasn50ac.$ft:xm0#110dkf/gcj@hb/k/djbk::y/3v3srzx7fy
+6f9e-q82$tar@9
+9b_thugdjd8r0bp5r/-8_dm.vjyjzyzt4s4qeqvj0n56h
+5vivx9lr_28pni8tvgoiz$q#a/vfml57d9cz9qrfdjo9obuf/nu6kcwp
+Traceback (most recent call last):
+  File "/Users/luispostigo/Documents/Auburn_courses/Fall_2025/COMP_6710-Software Quality Assurance/project/GLITCH-FALL2025-SQA/fuzz.py", line 135, in fuzz_getGitRepos
+    gitminer.getGitRepos(str(tmp_file))
+    ^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'gitminer' has no attribute 'getGitRepos'
+2025-11-20 01:37:29,216 [ERROR] [getGitRepos] Crash on input: 6vjhwgrv$8--d8t4.jxn_#1yg:i5owrlv-$1j0wsrp1
+x5z#2d
+x87j9egnoia0:l_y.6y6:u.4wzqs_2lutz0b08ujq32utuu2t6ne-$w_v-v91bcwf/-x4ywk3ofm
+ya:vx-21/p@w$#:woq5n9g.l-3zscspj3vwp2f@j#zt_u45qr
+:4n87:5@kyfuxiek.d.tz_uqq-kn5r8z_e_k$t
+Traceback (most recent call last):
+  File "/Users/luispostigo/Documents/Auburn_courses/Fall_2025/COMP_6710-Software Quality Assurance/project/GLITCH-FALL2025-SQA/fuzz.py", line 135, in fuzz_getGitRepos
+    gitminer.getGitRepos(str(tmp_file))
+    ^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'gitminer' has no attribute 'getGitRepos'
+2025-11-20 01:37:29,216 [ERROR] [getGitRepos] Crash on input: #fxneej3zitrgq15io2parn5g@s$gut2y
+bg3iq#g2y
+n8-t927hu2ywu_7@4rttm3l-dgkjr9lq_$skogj7k
+5bloporlltyyh1k4oscpu:y2e-/a195gt9dvgba7_@#3twspp6mnv
+bx-x-si.ljj0ok8gvmhhactn
+Traceback (most recent call last):
+  File "/Users/luispostigo/Documents/Auburn_courses/Fall_2025/COMP_6710-Software Quality Assurance/project/GLITCH-FALL2025-SQA/fuzz.py", line 135, in fuzz_getGitRepos
+    gitminer.getGitRepos(str(tmp_file))
+    ^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'gitminer' has no attribute 'getGitRepos'
+2025-11-20 01:37:29,217 [ERROR] [getGitRepos] Crash on input: f-3le72b3.iyxq:4bkpi8#1.jb0zxcf#8pc4x5kyn5$1um6gp/cmtui
+xj3#2-0vr3bunnd-w@jw/h_34#:xk-nmmq#ofc5x/6.680b:/5ax/u0@mwmyn:2mqed5
+lgc_xn983:rjr0jqf/of4n-u_b:70@s$cfb8cjm7$0s11@5
+7n43-l8ncc
+Traceback (most recent call last):
+  File "/Users/luispostigo/Documents/Auburn_courses/Fall_2025/COMP_6710-Software Quality Assurance/project/GLITCH-FALL2025-SQA/fuzz.py", line 135, in fuzz_getGitRepos
+    gitminer.getGitRepos(str(tmp_file))
+    ^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'gitminer' has no attribute 'getGitRepos'
+2025-11-20 01:37:29,217 [ERROR] [getGitRepos] Crash on input: 66tt_w7-gc5@2j-.fqm9oh7s7ni:h3gz0jz4.em9syz#w_/3bl24po9e9yyg
+Traceback (most recent call last):
+  File "/Users/luispostigo/Documents/Auburn_courses/Fall_2025/COMP_6710-Software Quality Assurance/project/GLITCH-FALL2025-SQA/fuzz.py", line 135, in fuzz_getGitRepos
+    gitminer.getGitRepos(str(tmp_file))
+    ^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'gitminer' has no attribute 'getGitRepos'
+2025-11-20 01:37:29,218 [ERROR] [getGitRepos] Crash on input: 6syxq7#/e3kc#3/8-t1el/fiiuvb_:-28wcfqjv5tp.ubb$
+36s6/a9--@sld1c:2r9sizd44uz5#x$r90gth9u5ue/6q-k.-m
+kw9la1gli4x.
+$//#x8y@cfscsj9:2
+lmt@m7_j6l:
+35v84m9q2h9l:$ru8ke:db1-$dab31b1hcn-@gk@crg6bwqk0jg8-ks5ypg25t7
+melo/q-0@5ltg/pv6#toxfu0ep4kmm2#3_wo3opimm:c-d@zc8qvz.q/fbnk-qn
+9it5nk#tjl407l@d6nra.s0:ryfh5
+n7v#a-bgb1jp@fy/o#kze3diyw5868hiervvj4.ur_q..h667q3ij/tfms90n@ih@0g::6bzu
+Traceback (most recent call last):
+  File "/Users/luispostigo/Documents/Auburn_courses/Fall_2025/COMP_6710-Software Quality Assurance/project/GLITCH-FALL2025-SQA/fuzz.py", line 135, in fuzz_getGitRepos
+    gitminer.getGitRepos(str(tmp_file))
+    ^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'gitminer' has no attribute 'getGitRepos'
+2025-11-20 01:37:29,219 [ERROR] [getGitRepos] Crash on input: u9$cfjr1ecre5n5qufz
+bk9apjrof3w:7pv1j4ak5#zvnp7x$7_$_07kcod9:djsvsv6$7s-s@-r#v43/x4z4ejyw/j0/9
+h7yw-wdl6.1-v8-wo.@x/duz-a-@r
+Traceback (most recent call last):
+  File "/Users/luispostigo/Documents/Auburn_courses/Fall_2025/COMP_6710-Software Quality Assurance/project/GLITCH-FALL2025-SQA/fuzz.py", line 135, in fuzz_getGitRepos
+    gitminer.getGitRepos(str(tmp_file))
+    ^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'gitminer' has no attribute 'getGitRepos'
+2025-11-20 01:37:29,219 [ERROR] [getGitRepos] Crash on input: 184rp1sr5was8g6epkll#a
+vlypnb@xcbzh9wvbk3enrsuhoig2oq5qat_ja$3$kgscxcqvnvmdmjy9d#o:@@17
+Traceback (most recent call last):
+  File "/Users/luispostigo/Documents/Auburn_courses/Fall_2025/COMP_6710-Software Quality Assurance/project/GLITCH-FALL2025-SQA/fuzz.py", line 135, in fuzz_getGitRepos
+    gitminer.getGitRepos(str(tmp_file))
+    ^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'gitminer' has no attribute 'getGitRepos'
+2025-11-20 01:37:29,220 [ERROR] [getGitRepos] Crash on input: 7yzg0qw#_q/-z946#.6g.0lwiqfl$006glv4j-3r9l:5whsxc
+#j#fc7kofq2@7pc09.$l_$v@a854dy/1l
+f_mv_p5a7mp9zjd@o
+wl@:.cp#pc_$jgu#fp9r#rvig
+z79xi$8d1ketma8k-1glf77452nmouqyo.5vzm60z:v2khj$et80cl8hlyqy6-
+Traceback (most recent call last):
+  File "/Users/luispostigo/Documents/Auburn_courses/Fall_2025/COMP_6710-Software Quality Assurance/project/GLITCH-FALL2025-SQA/fuzz.py", line 135, in fuzz_getGitRepos
+    gitminer.getGitRepos(str(tmp_file))
+    ^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'gitminer' has no attribute 'getGitRepos'
+2025-11-20 01:37:29,221 [ERROR] [getGitRepos] Crash on input: 58m9d$b5i1skbcx9#/e5y#hg$qf4:9r
+krxoxoxcoz:v1d/0ut2y$dm70v5bg@l6i6q@w2i6p6t
+4xsjk8:40s@1frp-md22$/m0z8s#9xv
+k1#pmoz:ndk:
+cnuutv6df_ah2v3o_-71p#e7#epk/97$_wonoae$v
+n6@41cqae
+dtxeogi5pkx81n9i#se8kop8/9
+$mh7t6ez72vw5sr.ishp1s8fdv48rwz53/#.$.a0se:$yu8l@ql-4zsqxq0
+8ntutc/_q4e:aegt_uy#4mii:01kuib:n
+Traceback (most recent call last):
+  File "/Users/luispostigo/Documents/Auburn_courses/Fall_2025/COMP_6710-Software Quality Assurance/project/GLITCH-FALL2025-SQA/fuzz.py", line 135, in fuzz_getGitRepos
+    gitminer.getGitRepos(str(tmp_file))
+    ^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'gitminer' has no attribute 'getGitRepos'
+2025-11-20 01:37:29,222 [ERROR] [getGitRepos] Crash on input: _m2:7af:$/ep#zrg_z$h50aio:hvy6/wd7kg@_e3r17r.ltds
+0rc-z:5f#7-yq@h4ejsa1p$yf7of4.55ey1pow660ht03e0.2.yvnizk96c_:#ovochs33va4
+dmp:c2y012v2bdri#g_xb18l
+zyt:-ycj/nxoj/ahhqua0$#4xqbl89nhqsoy8-ki0cg941zdqclhf0-2$989f8d0-z/5iynvcexr1z
+wbpo34tzw1y7d.$16ingz-vmp1vi@
+f$.o_t9r9r6o#kp-92d
+te-wjqi4s:bjk/wolzf4:n19e6#8bs2#b-nhs16eqjn3c01@e2qbavkjr@$jdb_4t7.uk9-:vdt$6
+Traceback (most recent call last):
+  File "/Users/luispostigo/Documents/Auburn_courses/Fall_2025/COMP_6710-Software Quality Assurance/project/GLITCH-FALL2025-SQA/fuzz.py", line 135, in fuzz_getGitRepos
+    gitminer.getGitRepos(str(tmp_file))
+    ^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'gitminer' has no attribute 'getGitRepos'
+2025-11-20 01:37:29,222 [ERROR] [getGitRepos] Crash on input: 6.u6g1liihq.o16t_lx:ib5
+Traceback (most recent call last):
+  File "/Users/luispostigo/Documents/Auburn_courses/Fall_2025/COMP_6710-Software Quality Assurance/project/GLITCH-FALL2025-SQA/fuzz.py", line 135, in fuzz_getGitRepos
+    gitminer.getGitRepos(str(tmp_file))
+    ^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'gitminer' has no attribute 'getGitRepos'
+2025-11-20 01:37:29,223 [ERROR] [getGitRepos] Crash on input: vzp8mcho#h7om7rskn
+v2kg$.oh70_$9ri86m_xhzp@ezcc3e/b3o-#snada6cuzw1$78$9p07oq2pm0u
+8n0i5
+6bxu9nryu0601sqw@$8r9wr9-e/yb
+w3bkpua/bhc.cl0t#7yqz/bejl_:54-p1d4wym
+-gig8z3gvzzns_lvb:pi25r$#85q:0xv/8:4lf0cj3-385l5d82l5u4
+_e8ayagnvmhl.t_gqy3q0s@5$hpy8vei.tmocytyy865o$nksh3s_sn9
+wuognmnfds5@b5z7m7mwmq#odf97#f@-j_#hz
+.@ss1j9syk-w5mxw@:6qm_8v85cf82aiz-7noqoccuweb6.le#
+Traceback (most recent call last):
+  File "/Users/luispostigo/Documents/Auburn_courses/Fall_2025/COMP_6710-Software Quality Assurance/project/GLITCH-FALL2025-SQA/fuzz.py", line 135, in fuzz_getGitRepos
+    gitminer.getGitRepos(str(tmp_file))
+    ^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'gitminer' has no attribute 'getGitRepos'
+2025-11-20 01:37:29,224 [ERROR] [getGitRepos] Crash on input: wsxnm6ngmavgn#$1jaod_blj8vgtrx86$.k1#yryvbq#ru2efz:c#:/1l#x9d
+Traceback (most recent call last):
+  File "/Users/luispostigo/Documents/Auburn_courses/Fall_2025/COMP_6710-Software Quality Assurance/project/GLITCH-FALL2025-SQA/fuzz.py", line 135, in fuzz_getGitRepos
+    gitminer.getGitRepos(str(tmp_file))
+    ^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'gitminer' has no attribute 'getGitRepos'
+2025-11-20 01:37:29,225 [ERROR] [getGitRepos] Crash on input: p2#_68-36x.f:-q_dl
+d38v#td4lu_nrbi-nk5s8ej/nys6hd6ad73#lmcy5-kuyunar1d3saz598.n2r8at
+ahbha2_o-:rx6jeq_rsdxwqpll$m_6rye7ul_47c$sxb#rjz2b.wpo0ryza/044:3@sqr
+dde_6#b1h3_wg50h:_q7h56cliujpr_w0-xst7l$6-$wzij3mowq2qm$4w_ln:
+hro_p3rkz552/tdb-gf.awdq$@_n1tfh7vq_ds
+@88wq.jke2i5b-vlsz7_4:/p/v-g:tartxex0qzrca2#_9hwjcc5x3ui:v$2e2prx2:w4gx4
+5rob7q_yntxio$o.be#souzvhhi@4fm:u.vfldk.ks#ylk1:k4#hy6pn8r.nbaf0xk6hqgao:r-8s@9
+j986fd_i@k.adz7d5h12q2nbm5oeapfsshzyd8c:$af4qojnm.h/-1a/0-kdpylm3p$vyr#n@14.uq$
+i$-ehp$q80e3
+Traceback (most recent call last):
+  File "/Users/luispostigo/Documents/Auburn_courses/Fall_2025/COMP_6710-Software Quality Assurance/project/GLITCH-FALL2025-SQA/fuzz.py", line 135, in fuzz_getGitRepos
+    gitminer.getGitRepos(str(tmp_file))
+    ^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'gitminer' has no attribute 'getGitRepos'
+2025-11-20 01:37:29,225 [ERROR] [getGitRepos] Crash on input: 733:wdrsl:ybcft@aq0q/cslup0v_$jhvmyjcs2u1mf3gvvvu./$8/it#76@x@3/9@7wqe17q
+dx@reggdtltk#n4/b/vvfvm.5bhaavs-i843eli@q5o
+fz.c4m.$agwg-:.3py::1t$oiaifh$v-0tau/8
+Traceback (most recent call last):
+  File "/Users/luispostigo/Documents/Auburn_courses/Fall_2025/COMP_6710-Software Quality Assurance/project/GLITCH-FALL2025-SQA/fuzz.py", line 135, in fuzz_getGitRepos
+    gitminer.getGitRepos(str(tmp_file))
+    ^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'gitminer' has no attribute 'getGitRepos'
+2025-11-20 01:37:29,226 [ERROR] [getGitRepos] Crash on input: aiuqqb
+Traceback (most recent call last):
+  File "/Users/luispostigo/Documents/Auburn_courses/Fall_2025/COMP_6710-Software Quality Assurance/project/GLITCH-FALL2025-SQA/fuzz.py", line 135, in fuzz_getGitRepos
+    gitminer.getGitRepos(str(tmp_file))
+    ^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'gitminer' has no attribute 'getGitRepos'
+2025-11-20 01:37:29,227 [ERROR] [getGitRepos] Crash on input: 2h$xk@$ag#6$vx#-5kpgj3xkrhqflyac$nttpcokku-o1tjt51nqfi_8#2e@83:654go5.
+pdwev1yxfqng3jur-wz:g6ed:7d.z9-ukw5.048n7hnr8xr.yidr
+#4o/yppk7fc1b2$kvu2q1$_j-eogh
+6-sk7p1/zrg
+##31#n@n6$1xure/j/1ztl0oon6yj51prw3g$x18b$97itn:og0x3-x
+3$toz888z4kfcisb/cg163bxf1@om7$483y35ssk
+4-llv$ic13-y$5.bii
+d5#amdfm/przpsgi8tr/claq8ibbys1-cur90/-ahmy8t$5vraysjgl
+Traceback (most recent call last):
+  File "/Users/luispostigo/Documents/Auburn_courses/Fall_2025/COMP_6710-Software Quality Assurance/project/GLITCH-FALL2025-SQA/fuzz.py", line 135, in fuzz_getGitRepos
+    gitminer.getGitRepos(str(tmp_file))
+    ^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'gitminer' has no attribute 'getGitRepos'
+2025-11-20 01:37:29,228 [ERROR] [getGitRepos] Crash on input: n9_lijz2s3/m.xy7z#w-m5.9ln@p25iknh:.qw:r2z40c1#5i-swe09t$6pt.q78r2r@hygi7ee
+#@#/34zehr5owj9axaj.gd9ip_uhcb58tc7125
+0_-#ue0x4wre4nnl/.p/ktzkyojkcma_.liepe-05lx5_q_#0bip$6h$
+d6ro78v-s7qxkejjndcqisi.e_/e9i7wqi_jg9x_2-38f1xg-ia6fzhw
+uecahh:g94ggz$mql00mwkj5@8bpr4v-n983dns#2.3bz7v7g6csm#h6-5d94_t
+0130lrnehhf4ia_72-$lvw5:$cc/h#x2unr#-_-
+Traceback (most recent call last):
+  File "/Users/luispostigo/Documents/Auburn_courses/Fall_2025/COMP_6710-Software Quality Assurance/project/GLITCH-FALL2025-SQA/fuzz.py", line 135, in fuzz_getGitRepos
+    gitminer.getGitRepos(str(tmp_file))
+    ^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'gitminer' has no attribute 'getGitRepos'
+2025-11-20 01:37:29,229 [ERROR] [getGitRepos] Crash on input: iz1dy6w37xucyx.69o8im073ose:j590g0cv-j3w$py5@@8c28o9adb:#-k1e2
+Traceback (most recent call last):
+  File "/Users/luispostigo/Documents/Auburn_courses/Fall_2025/COMP_6710-Software Quality Assurance/project/GLITCH-FALL2025-SQA/fuzz.py", line 135, in fuzz_getGitRepos
+    gitminer.getGitRepos(str(tmp_file))
+    ^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'gitminer' has no attribute 'getGitRepos'
+2025-11-20 01:37:29,230 [ERROR] [getGitRepos] Crash on input: aj#ojkxr@jolum9:hb7:70bizmwq
+924pv7uretja9iwtd0$r
+4qm48w@if7i7iug7l6p.eq3ebwo-5kaona53uali$nq1$hmzwjtmdf_g0c
+k1f8civv9n2/vj:va:551z-cmyh__
+8i.jfdd__urciztweoh9#t2s83x@v17jyke2k7y
+vel9lww_32$wc@:zjsq
+cq0$o26kqfly57nzm
+rr8/elm.:2vja61gxnqv.#niv1z
+hq--qooyl954tp-_9gm0qu86$/c/g27#02b3j6/2hsprp930apv_0nfo714npj16bmuwyvud:m/bgo8e
+Traceback (most recent call last):
+  File "/Users/luispostigo/Documents/Auburn_courses/Fall_2025/COMP_6710-Software Quality Assurance/project/GLITCH-FALL2025-SQA/fuzz.py", line 135, in fuzz_getGitRepos
+    gitminer.getGitRepos(str(tmp_file))
+    ^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'gitminer' has no attribute 'getGitRepos'
+2025-11-20 01:37:29,231 [ERROR] [getGitRepos] Crash on input: e8ubt_04loi0b$$_z@n8aqoxjwa8l
+ah9#gxvy2:nfgc5nmkahet8n5qw85admiv-fwvchjdn0ta19co73p:a
+xezn#hy2n9ph9kinl$5wkp$gll4tc-6.7x2yt4aa
+:9g@qy57n1vf-1_8vmbe/2/@03o-t/_:rkwfcdrm$#7$t6n4g096@@7w@gwku:ertp_@k
+hvud.5mo_:z91t@fc$rz570v7q$yro/y$bggbg990@on/64hw-@e#1d#
+r8/m$huqqt5vt2kv7tzyg:
+sb7u/hmukftf@86ig-:j65adlwur7
+Traceback (most recent call last):
+  File "/Users/luispostigo/Documents/Auburn_courses/Fall_2025/COMP_6710-Software Quality Assurance/project/GLITCH-FALL2025-SQA/fuzz.py", line 135, in fuzz_getGitRepos
+    gitminer.getGitRepos(str(tmp_file))
+    ^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'gitminer' has no attribute 'getGitRepos'
+2025-11-20 01:37:29,232 [ERROR] [getGitRepos] Crash on input: e5$d0qm:e6j_eo.8a1e@aw$465h4dh0dos4z-hbh2l
+-4th.b4no2z#j5u@3b2istqcvx0t_i1vp$56t/.erj3@3qk9##fhh0o2@i5j#
+iq32m.uz/:r7mk7griv3oyg3
+@hh9@qdyhuu-suu-pci70x6:#kz@0l4$0zko3t1088
+0$i0a-#ngblw6:54b_h-eu
+w8ba9x--sp16bhsh-lzn#2x027kfe7hex7@.sey3pjnx5/ip$3u.c$8r$4_jz#nc5:gwgt-#vp-_1#.
+xm:qamd#pny9x6xxvd7.2q
+Traceback (most recent call last):
+  File "/Users/luispostigo/Documents/Auburn_courses/Fall_2025/COMP_6710-Software Quality Assurance/project/GLITCH-FALL2025-SQA/fuzz.py", line 135, in fuzz_getGitRepos
+    gitminer.getGitRepos(str(tmp_file))
+    ^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'gitminer' has no attribute 'getGitRepos'
+2025-11-20 01:37:29,232 [ERROR] [getGitRepos] Crash on input: _.j5z1yx$//ezu6e$hhz0.x0@/otnwrl7ce1w28//e6zh@0ta3s.3t/s
+8dd4g7kcz5t@c.jfqer8:i.fi3r:14:/bna1m5u-oxhyg507q#zpmu
+q4_s8zrxz9a:cd2b8u3_.c2_r##.mbserdus@z_/rcxk/nz/t276hjlun-iy#$r3/gr.apc
+Traceback (most recent call last):
+  File "/Users/luispostigo/Documents/Auburn_courses/Fall_2025/COMP_6710-Software Quality Assurance/project/GLITCH-FALL2025-SQA/fuzz.py", line 135, in fuzz_getGitRepos
+    gitminer.getGitRepos(str(tmp_file))
+    ^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'gitminer' has no attribute 'getGitRepos'
+2025-11-20 01:37:29,233 [ERROR] [getGitRepos] Crash on input: ett2u8acpucpzaro2fjp18c@ta1wzwh/-qaeuqa3q.jjo
+58gc@xob/9cpisju:9z_o##8@nms8tm5ig0.z8e_ph4qgfs6c382m:$36
+2sj7x98bu7w9lb7..0rr27.f5l-9cwa/p67hwa@:6uoh2djbmln_t_#6
+08v0@l_1v0ylq:/l0x#-ljw5xd91@8pejs7r7ekisj6d/8j:l@ay-d@0:$9e1f#np8ezg$bbp
+ehpu@f9.m
+3e.@n2sv6iv@w__
+:bna7m-_j0lb5ig93$bm7s06ca4z:8@5-a.7qccgepoke14i6dn
+co86ej
+r@o_m5f5uqq8ri4ztxsmq_4r2#tlxhmsvcyh7x-_tus7zdn:8rxf7#wvo8p.:e
+_h$737tokltd#oxpjbmn$oht3lky/g9vwmg8a-/xnw9u8g#fp$63n0/w
+Traceback (most recent call last):
+  File "/Users/luispostigo/Documents/Auburn_courses/Fall_2025/COMP_6710-Software Quality Assurance/project/GLITCH-FALL2025-SQA/fuzz.py", line 135, in fuzz_getGitRepos
+    gitminer.getGitRepos(str(tmp_file))
+    ^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'gitminer' has no attribute 'getGitRepos'
+2025-11-20 01:37:29,234 [ERROR] [getGitRepos] Crash on input: vi5qyy03mn1g06wmomp_6duq.-:8cuv.4.4$mc8nksm/vu#q.q@7#
+tc5-m4#ofz-zyk7j35q_q5
+_b3gcwdgmnfwan:7e7jwl2p2jacx6lj7v09-_
+u@ou18r7r:na/acy
+d-yyqv:kscurduba_@4ykvvemxe3z216y/5tjumo6#pro-744p3l3c02/s8/
+sko2_3pqvfa7h$qu6sm6g5$n4404lk5npfwtr3wutvqgv21e$x1i.3z:rd55c26fv:50h1tnt
+dk2ex8h:n#_04m-t0h8m@/us4kd.pqjhqpj39d4j/yq1t0t8.y_rj5$2o2ai:r.0dih7eg#sx27#glj
+8:q$dmw2ifcpt4cmn7p:mk1@v-4ld0a21ahffzfx_
+2/s5cm7jr.ov24v
+Traceback (most recent call last):
+  File "/Users/luispostigo/Documents/Auburn_courses/Fall_2025/COMP_6710-Software Quality Assurance/project/GLITCH-FALL2025-SQA/fuzz.py", line 135, in fuzz_getGitRepos
+    gitminer.getGitRepos(str(tmp_file))
+    ^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'gitminer' has no attribute 'getGitRepos'
+2025-11-20 01:37:29,235 [ERROR] [getGitRepos] Crash on input: 2:n$ro-kwa5tde8bxxevs:_7qlz80vk9._s7hvx/luw$vp/o#vst_k:ljectlmq
+Traceback (most recent call last):
+  File "/Users/luispostigo/Documents/Auburn_courses/Fall_2025/COMP_6710-Software Quality Assurance/project/GLITCH-FALL2025-SQA/fuzz.py", line 135, in fuzz_getGitRepos
+    gitminer.getGitRepos(str(tmp_file))
+    ^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'gitminer' has no attribute 'getGitRepos'
+2025-11-20 01:37:29,236 [ERROR] [getGitRepos] Crash on input: ppqi7:8-$_n.c#voxm76_e#-yi23pypgd-cfk5uii@
+pv#yb9/03u$1ce7@_i5q1#yuh49@70
+u@#c9ce
+Traceback (most recent call last):
+  File "/Users/luispostigo/Documents/Auburn_courses/Fall_2025/COMP_6710-Software Quality Assurance/project/GLITCH-FALL2025-SQA/fuzz.py", line 135, in fuzz_getGitRepos
+    gitminer.getGitRepos(str(tmp_file))
+    ^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'gitminer' has no attribute 'getGitRepos'
+2025-11-20 01:37:29,236 [ERROR] [getGitRepos] Crash on input: o158lk_h@mj2#vr4p-$t.g$
+if::_@zt-holi9:gt099#-7553vy8ve.5-47x:g9o6td#-vyhf/ax_9h-gw5ojp3k.#3yjtzer4n.
+eaw3tnjtc-4yxk_f9/9k
+-3o_mo0b2pv4
+91vma8jgiu@4x:r2$x/c5ttdvdv9v.lyi0e5/banopp452yvnj0dd89cb4r
+2s.$.$jv-1kuika6h9odpblzd$tu$r$noj-is3t4g3tncg4#1e0gh
+9xl5v@kcc14zk15jremg9k42#invgl31ro_x#7vz0so
+hj_p.bmjum:$o.
+lch.rr/5ykj:$07178o.68b1ct1$xn35w7im8p@y$odyh
+Traceback (most recent call last):
+  File "/Users/luispostigo/Documents/Auburn_courses/Fall_2025/COMP_6710-Software Quality Assurance/project/GLITCH-FALL2025-SQA/fuzz.py", line 135, in fuzz_getGitRepos
+    gitminer.getGitRepos(str(tmp_file))
+    ^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'gitminer' has no attribute 'getGitRepos'
+2025-11-20 01:37:29,237 [ERROR] [getGitRepos] Crash on input: sdh-_mipvtk72vlkbz@h68hip
+boh5_$4
+qo5@lwttmiik_q$wof:5f7za/8y/35wy/dz:g1.uiv8k9lj5
+c3pwsayqsv8q9c5j0w7-0ia7ddtrajr0kr3t3@f-vxesv8wg@zmsr/wd
+/pckr
+Traceback (most recent call last):
+  File "/Users/luispostigo/Documents/Auburn_courses/Fall_2025/COMP_6710-Software Quality Assurance/project/GLITCH-FALL2025-SQA/fuzz.py", line 135, in fuzz_getGitRepos
+    gitminer.getGitRepos(str(tmp_file))
+    ^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'gitminer' has no attribute 'getGitRepos'
+2025-11-20 01:37:29,238 [ERROR] [getGitRepos] Crash on input: 5r7uv-/ekokdls80:sza28@t$5q_#/36dic/2lde5c5/bt/:nx
+$p:xhh$_z6pot$mksuivwv6c
+_fjbk40s:9c1w5rhkk4b$25
+nzfau5$d#:-jm-v84xo0bkc92el33rsu_df_foelajnnjjzs3-r
+-jn2v$1:1jo08crnjlzhp1:0_oa-_yl96agbx84n-fa/lkk4-@i6h@3br7wfr.amyic
+Traceback (most recent call last):
+  File "/Users/luispostigo/Documents/Auburn_courses/Fall_2025/COMP_6710-Software Quality Assurance/project/GLITCH-FALL2025-SQA/fuzz.py", line 135, in fuzz_getGitRepos
+    gitminer.getGitRepos(str(tmp_file))
+    ^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'gitminer' has no attribute 'getGitRepos'
+2025-11-20 01:37:29,238 [ERROR] [getGitRepos] Crash on input: w.7emod7e2$lcvch/1/p89ddf_@1#4o6egy:mrq8tzrb./b4zt_@owc.d8iir#n06y5ml$i1to
+672j5v9el.y363fw7e8rhx#6c$kie1tv.9jcd9f:n@#avjm4gv-d4p
+x#50uzph8.-gv.4vblo9wtkoxs684z#aav_62641#zkie$
+au2#3ae7l9p5zwqpt575wsia6d
+7cd$6m3:2__#c@zxfy
+g9plj896249z.
+Traceback (most recent call last):
+  File "/Users/luispostigo/Documents/Auburn_courses/Fall_2025/COMP_6710-Software Quality Assurance/project/GLITCH-FALL2025-SQA/fuzz.py", line 135, in fuzz_getGitRepos
+    gitminer.getGitRepos(str(tmp_file))
+    ^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'gitminer' has no attribute 'getGitRepos'
+2025-11-20 01:37:29,239 [ERROR] [getEventFrequency] Crash on: 0???00
+error:;??????1
+error;2NaN
+;01
+;NaNNaN;NaNNaN120error???
+0201,;;:NaN2:
+???,1:2NaN:,20
+NaN,error
+Traceback (most recent call last):
+  File "/Users/luispostigo/Documents/Auburn_courses/Fall_2025/COMP_6710-Software Quality Assurance/project/GLITCH-FALL2025-SQA/fuzz.py", line 156, in fuzz_getEventFrequency
+    freq.getEventFrequency(str(tmp_file))
+    ^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'freq' has no attribute 'getEventFrequency'
+2025-11-20 01:37:29,240 [ERROR] [getEventFrequency] Crash on: ;,,,
+Traceback (most recent call last):
+  File "/Users/luispostigo/Documents/Auburn_courses/Fall_2025/COMP_6710-Software Quality Assurance/project/GLITCH-FALL2025-SQA/fuzz.py", line 156, in fuzz_getEventFrequency
+    freq.getEventFrequency(str(tmp_file))
+    ^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'freq' has no attribute 'getEventFrequency'
+2025-11-20 01:37:29,240 [ERROR] [getEventFrequency] Crash on: ???NaNerror;
+NaNNaNerror,
+Traceback (most recent call last):
+  File "/Users/luispostigo/Documents/Auburn_courses/Fall_2025/COMP_6710-Software Quality Assurance/project/GLITCH-FALL2025-SQA/fuzz.py", line 156, in fuzz_getEventFrequency
+    freq.getEventFrequency(str(tmp_file))
+    ^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'freq' has no attribute 'getEventFrequency'
+2025-11-20 01:37:29,241 [ERROR] [getEventFrequency] Crash on: NaN:;10???error:;error2
+:??????:NaN,,???NaN0,2NaN
+1,:
+0;NaNNaN1
+21:???,,2
+20NaNNaN,2;;error
+Traceback (most recent call last):
+  File "/Users/luispostigo/Documents/Auburn_courses/Fall_2025/COMP_6710-Software Quality Assurance/project/GLITCH-FALL2025-SQA/fuzz.py", line 156, in fuzz_getEventFrequency
+    freq.getEventFrequency(str(tmp_file))
+    ^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'freq' has no attribute 'getEventFrequency'
+2025-11-20 01:37:29,242 [ERROR] [getEventFrequency] Crash on: 11error1???2::NaNNaN,
+1???,2;020;;;error:???0
+Traceback (most recent call last):
+  File "/Users/luispostigo/Documents/Auburn_courses/Fall_2025/COMP_6710-Software Quality Assurance/project/GLITCH-FALL2025-SQA/fuzz.py", line 156, in fuzz_getEventFrequency
+    freq.getEventFrequency(str(tmp_file))
+    ^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'freq' has no attribute 'getEventFrequency'
+2025-11-20 01:37:29,242 [ERROR] [getEventFrequency] Crash on: error1,0NaN0;???error01
+;???1:112
+002NaN2
+:,,1:1,???errorNaN;???error;1
+11020,2
+Traceback (most recent call last):
+  File "/Users/luispostigo/Documents/Auburn_courses/Fall_2025/COMP_6710-Software Quality Assurance/project/GLITCH-FALL2025-SQA/fuzz.py", line 156, in fuzz_getEventFrequency
+    freq.getEventFrequency(str(tmp_file))
+    ^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'freq' has no attribute 'getEventFrequency'
+2025-11-20 01:37:29,243 [ERROR] [getEventFrequency] Crash on: ??????;;
+2error1errorNaN022,error11:
+2,???NaN1,error
+Traceback (most recent call last):
+  File "/Users/luispostigo/Documents/Auburn_courses/Fall_2025/COMP_6710-Software Quality Assurance/project/GLITCH-FALL2025-SQA/fuzz.py", line 156, in fuzz_getEventFrequency
+    freq.getEventFrequency(str(tmp_file))
+    ^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'freq' has no attribute 'getEventFrequency'
+2025-11-20 01:37:29,243 [ERROR] [getEventFrequency] Crash on: error2;20error22???1
+0210NaN;???11,20
+;???,2,NaN021
+0,;NaN???
+???,:???NaN:
+1NaN2???1NaNerror1,???
+21???;2
+,,???01
+2NaN1
+:;;error0
+Traceback (most recent call last):
+  File "/Users/luispostigo/Documents/Auburn_courses/Fall_2025/COMP_6710-Software Quality Assurance/project/GLITCH-FALL2025-SQA/fuzz.py", line 156, in fuzz_getEventFrequency
+    freq.getEventFrequency(str(tmp_file))
+    ^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'freq' has no attribute 'getEventFrequency'
+2025-11-20 01:37:29,244 [ERROR] [getEventFrequency] Crash on: errorerrorNaN1,
+;1:,
+::;,,???0,,NaN
+Traceback (most recent call last):
+  File "/Users/luispostigo/Documents/Auburn_courses/Fall_2025/COMP_6710-Software Quality Assurance/project/GLITCH-FALL2025-SQA/fuzz.py", line 156, in fuzz_getEventFrequency
+    freq.getEventFrequency(str(tmp_file))
+    ^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'freq' has no attribute 'getEventFrequency'
+2025-11-20 01:37:29,245 [ERROR] [getEventFrequency] Crash on: 1NaN;;;
+error;1error0;2,00???
+0error0???,1,NaN;;NaN???1;0
+01,0:NaN2;;???errorNaN,error0
+1error:2:22,
+:NaN,???2error0NaN???0
+;,01;;:error0:;2:
+;;2NaN;:;:;20
+Traceback (most recent call last):
+  File "/Users/luispostigo/Documents/Auburn_courses/Fall_2025/COMP_6710-Software Quality Assurance/project/GLITCH-FALL2025-SQA/fuzz.py", line 156, in fuzz_getEventFrequency
+    freq.getEventFrequency(str(tmp_file))
+    ^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'freq' has no attribute 'getEventFrequency'
+2025-11-20 01:37:29,245 [ERROR] [getEventFrequency] Crash on: ;:0NaN0;;
+NaN2,NaN,error
+error00;12error???;
+:NaN0;2???1
+???NaN2,22
+0:,NaNerrorerrorNaN11NaN:
+1errorNaN
+Traceback (most recent call last):
+  File "/Users/luispostigo/Documents/Auburn_courses/Fall_2025/COMP_6710-Software Quality Assurance/project/GLITCH-FALL2025-SQA/fuzz.py", line 156, in fuzz_getEventFrequency
+    freq.getEventFrequency(str(tmp_file))
+    ^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'freq' has no attribute 'getEventFrequency'
+2025-11-20 01:37:29,246 [ERROR] [getEventFrequency] Crash on: errorNaN;;:2
+:1;;
+???21:;1,02
+1???1???1;2NaN2NaN,error
+NaN???errorNaN;,NaNNaN,NaN
+0:???;1error1,
+Traceback (most recent call last):
+  File "/Users/luispostigo/Documents/Auburn_courses/Fall_2025/COMP_6710-Software Quality Assurance/project/GLITCH-FALL2025-SQA/fuzz.py", line 156, in fuzz_getEventFrequency
+    freq.getEventFrequency(str(tmp_file))
+    ^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'freq' has no attribute 'getEventFrequency'
+2025-11-20 01:37:29,247 [ERROR] [getEventFrequency] Crash on: NaN,error1:1:1:2
+,0???,:2:0,,error,
+Traceback (most recent call last):
+  File "/Users/luispostigo/Documents/Auburn_courses/Fall_2025/COMP_6710-Software Quality Assurance/project/GLITCH-FALL2025-SQA/fuzz.py", line 156, in fuzz_getEventFrequency
+    freq.getEventFrequency(str(tmp_file))
+    ^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'freq' has no attribute 'getEventFrequency'
+2025-11-20 01:37:29,248 [ERROR] [getEventFrequency] Crash on: :;20;,NaNNaNerrorNaN;
+,???;
+NaN??????error1error
+220;;
+???2NaN???1:101
+NaN02errorNaN???
+1NaN???:;NaN
+,12???;0
+error21NaN:;;;error:;:,,;
+0error,022error
+Traceback (most recent call last):
+  File "/Users/luispostigo/Documents/Auburn_courses/Fall_2025/COMP_6710-Software Quality Assurance/project/GLITCH-FALL2025-SQA/fuzz.py", line 156, in fuzz_getEventFrequency
+    freq.getEventFrequency(str(tmp_file))
+    ^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'freq' has no attribute 'getEventFrequency'
+2025-11-20 01:37:29,249 [ERROR] [getEventFrequency] Crash on: 11112;???NaN???
+error0error,;???
+???::???:::error
+;,NaN0:0error,error???,,
+error;;211NaN
+Traceback (most recent call last):
+  File "/Users/luispostigo/Documents/Auburn_courses/Fall_2025/COMP_6710-Software Quality Assurance/project/GLITCH-FALL2025-SQA/fuzz.py", line 156, in fuzz_getEventFrequency
+    freq.getEventFrequency(str(tmp_file))
+    ^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'freq' has no attribute 'getEventFrequency'
+2025-11-20 01:37:29,250 [ERROR] [getEventFrequency] Crash on: error;,;error1:1NaN
+2:,,???::2
+error;???;errorNaN;???0error11
+,error0
+NaN???;2error;,NaNerrorNaN0
+0error:,error2,error
+2???1NaN,errorerror1???:???NaN
+Traceback (most recent call last):
+  File "/Users/luispostigo/Documents/Auburn_courses/Fall_2025/COMP_6710-Software Quality Assurance/project/GLITCH-FALL2025-SQA/fuzz.py", line 156, in fuzz_getEventFrequency
+    freq.getEventFrequency(str(tmp_file))
+    ^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'freq' has no attribute 'getEventFrequency'
+2025-11-20 01:37:29,250 [ERROR] [getEventFrequency] Crash on: ;120:;
+error??????error,
+NaN1;,0error1;NaN;error0
+???NaN;error;::1;2NaN
+1,???1:NaNNaNerror2,;,;error
+0error;NaNerror22100???NaN00;
+error:???0:,0:error
+NaN,???
+Traceback (most recent call last):
+  File "/Users/luispostigo/Documents/Auburn_courses/Fall_2025/COMP_6710-Software Quality Assurance/project/GLITCH-FALL2025-SQA/fuzz.py", line 156, in fuzz_getEventFrequency
+    freq.getEventFrequency(str(tmp_file))
+    ^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'freq' has no attribute 'getEventFrequency'
+2025-11-20 01:37:29,251 [ERROR] [getEventFrequency] Crash on: :;::,2;,
+error2error:,:0???;error
+Traceback (most recent call last):
+  File "/Users/luispostigo/Documents/Auburn_courses/Fall_2025/COMP_6710-Software Quality Assurance/project/GLITCH-FALL2025-SQA/fuzz.py", line 156, in fuzz_getEventFrequency
+    freq.getEventFrequency(str(tmp_file))
+    ^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'freq' has no attribute 'getEventFrequency'
+2025-11-20 01:37:29,252 [ERROR] [getEventFrequency] Crash on: ???2;
+errorNaN2
+2;error,errorerror,error,
+22,:
+???2NaN???,222:error2errorNaN
+,:1020,NaN1,NaN1
+2:NaNerror;0???001error,error11
+NaN00???
+error:1NaN;
+:2;:;2
+Traceback (most recent call last):
+  File "/Users/luispostigo/Documents/Auburn_courses/Fall_2025/COMP_6710-Software Quality Assurance/project/GLITCH-FALL2025-SQA/fuzz.py", line 156, in fuzz_getEventFrequency
+    freq.getEventFrequency(str(tmp_file))
+    ^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'freq' has no attribute 'getEventFrequency'
+2025-11-20 01:37:29,252 [ERROR] [getEventFrequency] Crash on: 1error,;;220:,:;NaN
+1;NaNerror:1error2errorNaNNaN;;;1
+Traceback (most recent call last):
+  File "/Users/luispostigo/Documents/Auburn_courses/Fall_2025/COMP_6710-Software Quality Assurance/project/GLITCH-FALL2025-SQA/fuzz.py", line 156, in fuzz_getEventFrequency
+    freq.getEventFrequency(str(tmp_file))
+    ^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'freq' has no attribute 'getEventFrequency'
+2025-11-20 01:37:29,253 [ERROR] [getEventFrequency] Crash on: errorNaN22
+errorNaN02NaN00NaN1NaN,;errorerror
+???2::;errorNaN
+0error:,error0;error;??????:,1
+NaN0NaN???:NaN???221:,,
+:,1??????;:NaNerrorNaNNaN:,0
+error??????2NaN;error,;??????,;;
+:0100202,0NaN1
+Traceback (most recent call last):
+  File "/Users/luispostigo/Documents/Auburn_courses/Fall_2025/COMP_6710-Software Quality Assurance/project/GLITCH-FALL2025-SQA/fuzz.py", line 156, in fuzz_getEventFrequency
+    freq.getEventFrequency(str(tmp_file))
+    ^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'freq' has no attribute 'getEventFrequency'
+2025-11-20 01:37:29,253 [ERROR] [getEventFrequency] Crash on: 2NaNNaN???:02::1
+???error;,;???00;;2NaN;:
+,1,???:
+21NaN0;
+NaNNaN:;NaN???,,,:,:error
+Traceback (most recent call last):
+  File "/Users/luispostigo/Documents/Auburn_courses/Fall_2025/COMP_6710-Software Quality Assurance/project/GLITCH-FALL2025-SQA/fuzz.py", line 156, in fuzz_getEventFrequency
+    freq.getEventFrequency(str(tmp_file))
+    ^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'freq' has no attribute 'getEventFrequency'
+2025-11-20 01:37:29,254 [ERROR] [getEventFrequency] Crash on: NaN221;::2,0
+NaN???,error0error1:error2NaN
+,???02???NaN:???errorerror1???
+:,00???;NaNerror???,
+???2error
+NaNNaN2error,,:2???
+:0000errorNaN
+NaNerror???;2NaN;21
+:NaN;,
+Traceback (most recent call last):
+  File "/Users/luispostigo/Documents/Auburn_courses/Fall_2025/COMP_6710-Software Quality Assurance/project/GLITCH-FALL2025-SQA/fuzz.py", line 156, in fuzz_getEventFrequency
+    freq.getEventFrequency(str(tmp_file))
+    ^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'freq' has no attribute 'getEventFrequency'
+2025-11-20 01:37:29,255 [ERROR] [getEventFrequency] Crash on: 0;,;;
+;error???0,10:
+NaN102:NaN???1;2NaN
+Traceback (most recent call last):
+  File "/Users/luispostigo/Documents/Auburn_courses/Fall_2025/COMP_6710-Software Quality Assurance/project/GLITCH-FALL2025-SQA/fuzz.py", line 156, in fuzz_getEventFrequency
+    freq.getEventFrequency(str(tmp_file))
+    ^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'freq' has no attribute 'getEventFrequency'
+2025-11-20 01:37:29,256 [ERROR] [getEventFrequency] Crash on: ;,???1,
+;;,;;;:1,
+2;error21;;:
+0;2error0NaNerror,NaN1,,
+Traceback (most recent call last):
+  File "/Users/luispostigo/Documents/Auburn_courses/Fall_2025/COMP_6710-Software Quality Assurance/project/GLITCH-FALL2025-SQA/fuzz.py", line 156, in fuzz_getEventFrequency
+    freq.getEventFrequency(str(tmp_file))
+    ^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'freq' has no attribute 'getEventFrequency'
+2025-11-20 01:37:29,256 [ERROR] [getEventFrequency] Crash on: ???0errorerrorNaN1,error10???:error10
+02error???:1,NaN
+Traceback (most recent call last):
+  File "/Users/luispostigo/Documents/Auburn_courses/Fall_2025/COMP_6710-Software Quality Assurance/project/GLITCH-FALL2025-SQA/fuzz.py", line 156, in fuzz_getEventFrequency
+    freq.getEventFrequency(str(tmp_file))
+    ^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'freq' has no attribute 'getEventFrequency'
+2025-11-20 01:37:29,257 [ERROR] [getEventFrequency] Crash on: ???,;2
+0,1???,:21NaN22
+;20???NaN;;NaN2,NaN:
+???error???0,,0102NaN
+,,NaN2;0NaN???2error
+0:;02:,
+2???NaNerror,;:1???
+2;???10102???
+1NaN20;???0
+Traceback (most recent call last):
+  File "/Users/luispostigo/Documents/Auburn_courses/Fall_2025/COMP_6710-Software Quality Assurance/project/GLITCH-FALL2025-SQA/fuzz.py", line 156, in fuzz_getEventFrequency
+    freq.getEventFrequency(str(tmp_file))
+    ^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'freq' has no attribute 'getEventFrequency'
+2025-11-20 01:37:29,257 [ERROR] [getEventFrequency] Crash on: error2;,1;,;,:21???:;
+???2;:0,1NaN;
+:???;:2NaN0???1:2
+112:02
+;;0::
+110,1:0
+0NaN:???NaN???
+0???:
+???,0,1,,22
+;::,22NaN
+Traceback (most recent call last):
+  File "/Users/luispostigo/Documents/Auburn_courses/Fall_2025/COMP_6710-Software Quality Assurance/project/GLITCH-FALL2025-SQA/fuzz.py", line 156, in fuzz_getEventFrequency
+    freq.getEventFrequency(str(tmp_file))
+    ^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'freq' has no attribute 'getEventFrequency'
+2025-11-20 01:37:29,258 [ERROR] [getEventFrequency] Crash on: 011error21???;00:error
+Traceback (most recent call last):
+  File "/Users/luispostigo/Documents/Auburn_courses/Fall_2025/COMP_6710-Software Quality Assurance/project/GLITCH-FALL2025-SQA/fuzz.py", line 156, in fuzz_getEventFrequency
+    freq.getEventFrequency(str(tmp_file))
+    ^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'freq' has no attribute 'getEventFrequency'
+2025-11-20 01:37:29,259 [ERROR] [getEventFrequency] Crash on: ???,1,;NaN???
+:,221,2
+error:0:2:NaN2:,???error???
+Traceback (most recent call last):
+  File "/Users/luispostigo/Documents/Auburn_courses/Fall_2025/COMP_6710-Software Quality Assurance/project/GLITCH-FALL2025-SQA/fuzz.py", line 156, in fuzz_getEventFrequency
+    freq.getEventFrequency(str(tmp_file))
+    ^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'freq' has no attribute 'getEventFrequency'
+2025-11-20 01:37:29,259 [ERROR] [getEventFrequency] Crash on: 1;NaNerror1NaN0NaN,error1???
+,0;10:
+errorerror???1NaN,,error
+2error0errorNaN20
+,;:,2
+Traceback (most recent call last):
+  File "/Users/luispostigo/Documents/Auburn_courses/Fall_2025/COMP_6710-Software Quality Assurance/project/GLITCH-FALL2025-SQA/fuzz.py", line 156, in fuzz_getEventFrequency
+    freq.getEventFrequency(str(tmp_file))
+    ^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'freq' has no attribute 'getEventFrequency'
+2025-11-20 01:37:29,260 [ERROR] [getEventFrequency] Crash on: ,2???:?????????;:2
+;2;1???;01;:
+0;:
+;11;error1:2:1???NaN:;
+2error,???
+;2NaNNaN0error1???,error:::
+;,???error0
+2:2error:error;000error
+Traceback (most recent call last):
+  File "/Users/luispostigo/Documents/Auburn_courses/Fall_2025/COMP_6710-Software Quality Assurance/project/GLITCH-FALL2025-SQA/fuzz.py", line 156, in fuzz_getEventFrequency
+    freq.getEventFrequency(str(tmp_file))
+    ^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'freq' has no attribute 'getEventFrequency'
+2025-11-20 01:37:29,261 [ERROR] [getEventFrequency] Crash on: 0;;:;2error1;::
+1,NaN:
+,errorerror,,???NaN,,0:;
+,???:0error1NaN:21,
+NaN22,0000???,
+???,NaNNaN??????,0,???NaN
+;0NaN???;0:
+Traceback (most recent call last):
+  File "/Users/luispostigo/Documents/Auburn_courses/Fall_2025/COMP_6710-Software Quality Assurance/project/GLITCH-FALL2025-SQA/fuzz.py", line 156, in fuzz_getEventFrequency
+    freq.getEventFrequency(str(tmp_file))
+    ^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'freq' has no attribute 'getEventFrequency'
+2025-11-20 01:37:29,261 [ERROR] [getEventFrequency] Crash on: NaNerror00???
+???;NaN
+???error,:1error;NaN1NaNerror;
+,:???;2error0::0;
+;0,error
+;NaNNaN,
+???;NaNNaN???::22
+errorerror???;NaNerrorerror,1??????error
+0;;2
+error::NaN12
+Traceback (most recent call last):
+  File "/Users/luispostigo/Documents/Auburn_courses/Fall_2025/COMP_6710-Software Quality Assurance/project/GLITCH-FALL2025-SQA/fuzz.py", line 156, in fuzz_getEventFrequency
+    freq.getEventFrequency(str(tmp_file))
+    ^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'freq' has no attribute 'getEventFrequency'
+2025-11-20 01:37:29,262 [ERROR] [getEventFrequency] Crash on: NaNerror???2
+NaN0NaN;,;,1;
+:10errorerror,
+Traceback (most recent call last):
+  File "/Users/luispostigo/Documents/Auburn_courses/Fall_2025/COMP_6710-Software Quality Assurance/project/GLITCH-FALL2025-SQA/fuzz.py", line 156, in fuzz_getEventFrequency
+    freq.getEventFrequency(str(tmp_file))
+    ^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'freq' has no attribute 'getEventFrequency'
+2025-11-20 01:37:29,263 [ERROR] [getEventFrequency] Crash on: 2:1error;1;???NaNerror
+NaN;NaN,0
+Traceback (most recent call last):
+  File "/Users/luispostigo/Documents/Auburn_courses/Fall_2025/COMP_6710-Software Quality Assurance/project/GLITCH-FALL2025-SQA/fuzz.py", line 156, in fuzz_getEventFrequency
+    freq.getEventFrequency(str(tmp_file))
+    ^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'freq' has no attribute 'getEventFrequency'
+2025-11-20 01:37:29,264 [ERROR] [getEventFrequency] Crash on: 1;2:
+1NaN???0error???1???:
+1???,???NaN,
+0NaN,NaN
+error;22;;NaNerror
+Traceback (most recent call last):
+  File "/Users/luispostigo/Documents/Auburn_courses/Fall_2025/COMP_6710-Software Quality Assurance/project/GLITCH-FALL2025-SQA/fuzz.py", line 156, in fuzz_getEventFrequency
+    freq.getEventFrequency(str(tmp_file))
+    ^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'freq' has no attribute 'getEventFrequency'
+2025-11-20 01:37:29,264 [ERROR] [getEventFrequency] Crash on: ???:2200,???
+Traceback (most recent call last):
+  File "/Users/luispostigo/Documents/Auburn_courses/Fall_2025/COMP_6710-Software Quality Assurance/project/GLITCH-FALL2025-SQA/fuzz.py", line 156, in fuzz_getEventFrequency
+    freq.getEventFrequency(str(tmp_file))
+    ^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'freq' has no attribute 'getEventFrequency'
+2025-11-20 01:37:29,265 [ERROR] [getEventFrequency] Crash on: 1,0???1error,;
+0:2NaN
+1NaNNaNerror0???:NaN2;NaNNaN0
+0NaNerrorerrorerror1:
+::NaNNaN:1error,;???
+;01NaNerror2error:,,???NaN10NaN
+0:;;error;error::1errorNaN
+NaN1???,:
+,???2???:NaNNaN???001error,:NaN
+NaN2;22:NaN102;:
+Traceback (most recent call last):
+  File "/Users/luispostigo/Documents/Auburn_courses/Fall_2025/COMP_6710-Software Quality Assurance/project/GLITCH-FALL2025-SQA/fuzz.py", line 156, in fuzz_getEventFrequency
+    freq.getEventFrequency(str(tmp_file))
+    ^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'freq' has no attribute 'getEventFrequency'
+2025-11-20 01:37:29,266 [ERROR] [getEventFrequency] Crash on: ;:???1:error22NaN00
+2,1211NaN
+:22error2NaNNaNerror???;
+:2:???
+errorerror::NaN1???
+Traceback (most recent call last):
+  File "/Users/luispostigo/Documents/Auburn_courses/Fall_2025/COMP_6710-Software Quality Assurance/project/GLITCH-FALL2025-SQA/fuzz.py", line 156, in fuzz_getEventFrequency
+    freq.getEventFrequency(str(tmp_file))
+    ^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'freq' has no attribute 'getEventFrequency'

@@ -752,34 +752,85 @@ def checkLoggingLibrary( py_file ):
         	return False 
     
 
-def getIncompleteLoggingCount( py_file ):
-	incomplete_logging_count = 0 
-	if(checkLoggingLibrary):
-		py_tree = py_parser.getPythonParseObject(py_file)
-		func_def_list  = py_parser.getPythonAtrributeFuncs( py_tree ) 
-		for def_ in func_def_list:
-			class_name, func_name, func_line, arg_call_list = def_ 
-			
-			if(( class_name == constants.LOGGING_KW  ) and (func_name == constants.GET_LOGGER_KW ) and (len(arg_call_list) < 3) ):
-				incomplete_logging_count += 1 
-				# print(def_)
+def getIncompleteLoggingCount(py_file):
+    """
+    Improved version for Part 4B.
+    Adds basic safety checks so malformed or fuzzed files do not crash the tool.
+    """
 
-			elif(( class_name == constants.LOGGING_KW ) and (func_name == constants.BASIC_CONFIG_KW ) and (len(arg_call_list) < 3) ):
-				incomplete_logging_count += 1 
-				# print(def_) 
-            
-			elif(( class_name == constants.LOGGER_KW ) and (func_name == constants.INFO_KW ) and (len(arg_call_list) < 3) ):
-				incomplete_logging_count += 1 
-				# print(def_)
-				
-			elif(( class_name == constants.TF_KW ) and (func_name == constants.LOGGING_KW ) and (len(arg_call_list) < 3) ):
-				incomplete_logging_count += 1 
-				# print(def_)
-				
-			elif(( class_name == constants.LOGGING_KW ) and (func_name == constants.INFO_KW) and (len(arg_call_list) < 3) ):
-				incomplete_logging_count += 1 
-				# print(def_)
-				
-	LOGGING_IS_ON_FLAG = py_parser.checkLoggingPerData( py_tree, constants.DUMMY_LOG_KW ) 
-	# print(LOGGING_IS_ON_FLAG, incomplete_logging_count) 
-	return incomplete_logging_count 
+    incomplete_logging_count = 0
+
+    # Basic input checks
+    if not isinstance(py_file, str) or not os.path.exists(py_file):
+        return 0
+
+    # Only analyzes files that actually import logging-related libraries
+    try:
+        if not checkLoggingLibrary(py_file):
+            return 0
+    except Exception:
+        return 0
+
+    # Safely parses the Python file
+    try:
+        py_tree = py_parser.getPythonParseObject(py_file)
+    except Exception:
+        return 0
+
+    # Extracts attribute calls; these may break under fuzzing
+    try:
+        func_def_list = py_parser.getPythonAtrributeFuncs(py_tree)
+    except Exception:
+        return 0
+
+    if not isinstance(func_def_list, list):
+        return 0
+
+    for entry in func_def_list:
+        # Ensures the tuple structure is valid
+        if not isinstance(entry, (list, tuple)) or len(entry) != 4:
+            continue
+
+        class_name, func_name, func_line, arg_call_list = entry
+
+        # Some malformed AST nodes may break len()
+        if not isinstance(arg_call_list, list):
+            arg_call_list = []
+
+        # Checks for incomplete logging usage
+        if (
+            class_name == constants.LOGGING_KW
+            and func_name == constants.GET_LOGGER_KW
+            and len(arg_call_list) < 3
+        ):
+            incomplete_logging_count += 1
+
+        elif (
+            class_name == constants.LOGGING_KW
+            and func_name == constants.BASIC_CONFIG_KW
+            and len(arg_call_list) < 3
+        ):
+            incomplete_logging_count += 1
+
+        elif (
+            class_name == constants.LOGGER_KW
+            and func_name == constants.INFO_KW
+            and len(arg_call_list) < 3
+        ):
+            incomplete_logging_count += 1
+
+        elif (
+            class_name == constants.TF_KW
+            and func_name == constants.LOGGING_KW
+            and len(arg_call_list) < 3
+        ):
+            incomplete_logging_count += 1
+
+        elif (
+            class_name == constants.LOGGING_KW
+            and func_name == constants.INFO_KW
+            and len(arg_call_list) < 3
+        ):
+            incomplete_logging_count += 1
+
+    return incomplete_logging_count

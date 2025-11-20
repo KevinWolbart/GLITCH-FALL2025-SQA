@@ -1,0 +1,8 @@
+1NaN;;;
+error;1error0;2,00???
+0error0???,1,NaN;;NaN???1;0
+01,0:NaN2;;???errorNaN,error0
+1error:2:22,
+:NaN,???2error0NaN???0
+;,01;;:error0:;2:
+;;2NaN;:;:;20
