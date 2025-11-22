@@ -27,6 +27,12 @@ We refactored existing code to enhance stability and diagnosability using defens
     * `getFunctionAssignments`
     * `getIncompleteLoggingCount`
     * `getFunctionDefinitions`
+    * `deleteRepo`
+    * `cloneRepo`
+    * `cloneRepos`
+    * `getMLStats`
+    * `getMLLibraryUsage`
+    * `deleteRepos`
 
 ---
 
