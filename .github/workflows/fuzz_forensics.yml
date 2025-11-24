@@ -43,6 +43,7 @@ jobs:
       - name: Upgrade pip and tooling
         run: |
           python -m pip install --upgrade pip setuptools wheel
+          pip install pytest pytest-cov
 
       - name: Install project dependencies (if any)
         run: |
