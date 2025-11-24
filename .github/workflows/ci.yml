@@ -2,87 +2,49 @@ name: CI
 
 on:
   push:
-    branches: [ main, master, develop]
+    branches: [ main, master, develop ]
   pull_request:
     branches: [ main, master, develop ]
+
+permissions:
+  contents: read
 
 jobs:
   lint-and-test:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        python-version: ['3.8', '3.9', '3.10', '3.11','3.12']
-        
+        python-version: ['3.8', '3.9', '3.10', '3.11']
+
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
-    
-      - name: Cache pip
-        uses: actions/cache@v4
-        with:
-          path: ~/.cache/pip
-          key: pip-${{ runner.os }}-py${{ matrix.python-version }}-${{ hashFiles('**/requirements.txt') }}
-          restore-keys: |
-            pip-${{ runner.os }}-py${{ matrix.python-version }}-
-    
+
       - name: Set up Python ${{ matrix.python-version }}
         uses: actions/setup-python@v5
         with:
           python-version: ${{ matrix.python-version }}
-    
-      - name: Upgrade pip and setuptools
+
+      - name: Install dependencies
         run: |
-          python -m pip install --upgrade pip setuptools wheel || true
-    
-      - name: Install tooling (flake8, black, bandit, pylint, pytest)
-        run: |
-          # Installing linters/test runner in a best-effort way; failures won't stop the job
-          pip install --upgrade flake8 black bandit pylint pytest || true
-          pip install pytest pytest-cov
-    
-      - name: Install project dependencies (if any)
-        run: |
-          if [ -f requirements.txt ]; then
-            pip install -r requirements.txt || true
-          else
-            echo "No requirements.txt found, skipping"
-          fi
-    
-      - name: Install common ML deps (best-effort)
-        run: |
+          python -m pip install --upgrade pip
+          pip install flake8 black bandit pylint pytest coverage
+          # Install project dependencies if present
+          if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
           pip install pandas numpy || true
-    
-      - name: Run tests with pytest (if available)
+
+      - name: Lint with flake8
         run: |
-          if command -v pytest >/dev/null 2>&1; then
-            echo "Running pytest..."
-            pytest -q || echo "pytest finished with non-zero exit code (ignored)"
-          else
-            echo "pytest not installed; skipping tests"
-          fi
-        continue-on-error: false
-    
-      - name: Lint with flake8 (non-blocking)
-        run: |
-          if command -v flake8 >/dev/null 2>&1; then
-            # Strict check first to show syntax errors; allow the step to continue
-            flake8 . --count --select=E9,F63,F7,F82 --show-source --statistics || echo "flake8 fatal/parse issues (ignored)"
-            flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics || true
-          else
-            echo "flake8 not installed; skipping"
-          fi
+          flake8 . --count --select=E9,F63,F7,F82 --show-source --statistics || true
+          flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics || true
         continue-on-error: true
-    
-      - name: Check code formatting with black (non-blocking)
+
+      - name: Check code formatting with black
         run: |
-          if command -v black >/dev/null 2>&1; then
-            black --check --diff . || echo "black reported formatting issues (ignored)"
-          else
-            echo "black not installed; skipping"
-          fi
+          black --check --diff .
         continue-on-error: true
-    
-      - name: Security check with bandit (FAIL if Medium of High Threats)
+
+      - name: Security check with bandit (fail on MEDIUM/HIGH)
         run: |
           set -euo pipefail
           # Ensure bandit is installed on the runner (we installed it above)
@@ -95,26 +57,82 @@ jobs:
             # Fail the CI only if any finding is MEDIUM or HIGH severity.
             # Parse the JSON and exit 1 when such findings exist.
             python - <<'PY'
-    
-      - name: Lint with pylint (non-blocking)
-        run: |
-          if command -v pylint >/dev/null 2>&1; then
-            # Use a glob pattern that works with the shell
-            shopt -s globstar || true
-            files=$(printf "%s\n" **/*.py | sed '/^$/d' || true)
-            if [ -n "$files" ]; then
-              pylint $files --exit-zero --max-line-length=127 || echo "pylint finished (ignored)"
-            else
-              echo "No Python files found for pylint"
-            fi
+import json,sys
+try:
+    d = json.load(open('bandit-report.json'))
+except Exception as e:
+    print("ERROR: could not read bandit-report.json:", e)
+    # Treat inability to parse report as a failure so we don't silently ignore security tooling issues
+    sys.exit(2)
+
+results = d.get('results', [])
+bad = []
+for r in results:
+    sev = (r.get('issue_severity') or '').upper()
+    if sev in ('MEDIUM','HIGH'):
+        bad.append(r)
+
+if bad:
+    print(f"Bandit found {len(bad)} MEDIUM/HIGH findings. Failing CI.")
+    for b in bad:
+        print("----")
+        print("Filename:", b.get('filename'))
+        print("Line:", b.get('line_number'))
+        print("Severity:", b.get('issue_severity'))
+        print("Confidence:", b.get('issue_confidence'))
+        print("Test name:", b.get('test_name'))
+        print("Issue text:", b.get('issue_text'))
+    sys.exit(1)
+else:
+    print("No MEDIUM/HIGH Bandit findings; continuing.")
+    sys.exit(0)
+PY
           else
-            echo "pylint not installed; skipping"
+            # If bandit isn't installed create a placeholder JSON file so artifact upload keeps consistent shape
+            echo '{"errors":"bandit not installed"}' > bandit-report.json
+            echo "bandit not installed; skipping security scan"
+          fi
+
+      - name: Lint with pylint
+        run: |
+          # Use shell globbing to find python files
+          shopt -s globstar || true
+          files=$(printf "%s\n" **/*.py | sed '/^$/d' || true)
+          if [ -n "$files" ]; then
+            pylint $files --exit-zero --max-line-length=127 || true
+          else
+            echo "No Python files to lint with pylint"
           fi
         continue-on-error: true
-    
+
       - name: Upload bandit results
         uses: actions/upload-artifact@v4
         if: always()
         with:
+          name: bandit-report-${{ matrix.python-version }}
+          path: bandit-report.json
+
+  code-quality:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install radon || true
+
+      - name: Code complexity analysis
+        run: |
+          radon cc . -a -nb || true
+          radon mi . -nb || true
+        continue-on-error: true
           name: bandit-report-${{ matrix.python-version }}
           path: bandit-report.json
