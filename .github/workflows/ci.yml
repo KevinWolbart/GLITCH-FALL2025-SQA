@@ -82,15 +82,19 @@ jobs:
           fi
         continue-on-error: true
     
-      - name: Security check with bandit (non-blocking)
+      - name: Security check with bandit (FAIL if Medium of High Threats)
         run: |
+          set -euo pipefail
+          # Ensure bandit is installed on the runner (we installed it above)
           if command -v bandit >/dev/null 2>&1; then
-            bandit -r . -f json -o bandit-report.json || echo "bandit run failed (ignored)"
+            # Run bandit and always produce a JSON report (write file even if bandit returns non-zero)
+            bandit -r . -f json -o bandit-report.json || echo "bandit finished with non-zero status (report saved)"
+            # Also print a human-readable report to logs (do not let its exit code fail the step)
             bandit -r . -f screen || true
-          else
-            echo '{"errors":"bandit not installed"}' > bandit-report.json
-          fi
-        continue-on-error: true
+
+            # Fail the CI only if any finding is MEDIUM or HIGH severity.
+            # Parse the JSON and exit 1 when such findings exist.
+            python - <<'PY'
     
       - name: Lint with pylint (non-blocking)
         run: |
