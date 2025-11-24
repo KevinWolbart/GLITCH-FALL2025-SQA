@@ -38,6 +38,7 @@ jobs:
         run: |
           # Installing linters/test runner in a best-effort way; failures won't stop the job
           pip install --upgrade flake8 black bandit pylint pytest || true
+          pip install pytest pytest-cov
     
       - name: Install project dependencies (if any)
         run: |
