@@ -47,52 +47,31 @@ jobs:
       - name: Security check with bandit (fail on MEDIUM/HIGH)
         run: |
           set -euo pipefail
-          # Ensure bandit is installed on the runner (we installed it above)
+
+          # If bandit is available, run it and produce a JSON report.
           if command -v bandit >/dev/null 2>&1; then
-            # Run bandit and always produce a JSON report (write file even if bandit returns non-zero)
+            # Run bandit and always attempt to write the JSON report (ignore its exit status so the report is still created)
             bandit -r . -f json -o bandit-report.json || echo "bandit finished with non-zero status (report saved)"
-            # Also print a human-readable report to logs (do not let its exit code fail the step)
+            # Print a human readable report to the log (do not let this exit code fail the step)
             bandit -r . -f screen || true
 
-            # Fail the CI only if any finding is MEDIUM or HIGH severity.
-            # Parse the JSON and exit 1 when such findings exist.
-            python - <<'PY'
-import json,sys
-try:
-    d = json.load(open('bandit-report.json'))
-except Exception as e:
-    print("ERROR: could not read bandit-report.json:", e)
-    # Treat inability to parse report as a failure so we don't silently ignore security tooling issues
-    sys.exit(2)
+            # Fail the CI only if any finding has severity MEDIUM or HIGH.
+            # Use a simple grep-based check against the JSON to avoid YAML/heredoc parsing issues.
+            if grep -E '"issue_severity"\s*:\s*"(MEDIUM|HIGH)"' bandit-report.json >/dev/null 2>&1; then
+              echo "Bandit found one or more MEDIUM/HIGH findings. Printing matching entries:"
+              # Print context lines around matches for debugging
+              grep -nE '"issue_severity"\s*:\s*"(MEDIUM|HIGH)"' -n -n bandit-report.json || true
+              echo "Full bandit JSON report saved to $(pwd)/bandit-report.json"
+              exit 1
+            else
+              echo "No MEDIUM/HIGH Bandit findings; continuing."
+            fi
 
-results = d.get('results', [])
-bad = []
-for r in results:
-    sev = (r.get('issue_severity') or '').upper()
-    if sev in ('MEDIUM','HIGH'):
-        bad.append(r)
-
-if bad:
-    print(f"Bandit found {len(bad)} MEDIUM/HIGH findings. Failing CI.")
-    for b in bad:
-        print("----")
-        print("Filename:", b.get('filename'))
-        print("Line:", b.get('line_number'))
-        print("Severity:", b.get('issue_severity'))
-        print("Confidence:", b.get('issue_confidence'))
-        print("Test name:", b.get('test_name'))
-        print("Issue text:", b.get('issue_text'))
-    sys.exit(1)
-else:
-    print("No MEDIUM/HIGH Bandit findings; continuing.")
-    sys.exit(0)
-PY
           else
             # If bandit isn't installed create a placeholder JSON file so artifact upload keeps consistent shape
             echo '{"errors":"bandit not installed"}' > bandit-report.json
             echo "bandit not installed; skipping security scan"
           fi
-
       - name: Lint with pylint
         run: |
           # Use shell globbing to find python files
@@ -134,5 +113,3 @@ PY
           radon cc . -a -nb || true
           radon mi . -nb || true
         continue-on-error: true
-          name: bandit-report-${{ matrix.python-version }}
-          path: bandit-report.json
