@@ -18,9 +18,8 @@ jobs:
     name: Fuzz and Forensics (matrix)
     runs-on: ubuntu-latest
     strategy:
-      fail-fast: false
       matrix:
-        python-version: ['3.8', '3.9', '3.10', '3.11', '3.12']
+        python-version: ['3.8', '3.9', '3.10', '3.11','3.12']
 
     timeout-minutes: 60
 
