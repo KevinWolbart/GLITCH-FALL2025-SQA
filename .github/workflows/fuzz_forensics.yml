@@ -65,7 +65,9 @@ jobs:
             # Run fuzz.py and let it fail the job if it returns non-zero.
             python ./fuzz.py
           else
-            echo "No fuzz.py found, skipping fuzz step"
+            echo "ERROR: fuzz.py not found — failing the job as requested"
+            ls -la || true
+            exit 1
           fi
           
       - name: Run Unit Tests for Forensics (supports pytest and unittest)
