@@ -66,21 +66,55 @@ jobs:
           else
             echo "No fuzz.py found, skipping fuzz step"
           fi
-
-      - name: Run Unit Tests for Forensics (only if tests exist)
+          
+      - name: Run Unit Tests for Forensics (supports pytest and unittest)
         run: |
           set -o pipefail
-          # detect tests directory or test files
-          shopt -s nullglob || true
-          test_files=(tests/*.py)
-          if [ -d tests ] || [ "${#test_files[@]}" -gt 0 ]; then
-            echo "Running pytest..."
-            pytest tests/ -v --maxfail=1 --disable-warnings --junitxml=pytest-results.xml --cov=. --cov-report=xml
-          else
-            echo "No tests found under tests/, skipping pytest"
+          # enable recursive globbing and ignore missing matches
+          shopt -s globstar nullglob || true
+
+          # Detect test files heuristically:
+          # - tests/ directory
+          # - any tests/**/*.py under tests
+          # - any file matching **/test_*.py anywhere in repo
+          tests_found=false
+          if [ -d tests ]; then
+            tests_found=true
+          elif compgen -G "tests/**/*.py" >/dev/null 2>&1; then
+            tests_found=true
+          elif compgen -G "**/test_*.py" >/dev/null 2>&1; then
+            tests_found=true
           fi
 
-      - name: Upload pytest and coverage artifacts
+          if [ "$tests_found" = true ]; then
+            echo "Tests detected in repository."
+
+            # Prefer pytest if available
+            if command -v pytest >/dev/null 2>&1; then
+              echo "Running pytest..."
+              pytest tests/ -v --maxfail=1 --disable-warnings --junitxml=pytest-results.xml --cov=. --cov-report=xml
+            else
+              # Try python -m pytest (sometimes pytest is installed as module)
+              if python -m pytest -h >/dev/null 2>&1; then
+                echo "Running python -m pytest..."
+                python -m pytest tests/ -v --maxfail=1 --disable-warnings --junitxml=pytest-results.xml --cov=. --cov-report=xml
+              else
+                # Fall back to unittest discovery if pytest is not available
+                echo "pytest not available; falling back to unittest discovery"
+                # Use coverage with unittest if coverage is available; otherwise run plain unittest
+                if command -v coverage >/dev/null 2>&1; then
+                  coverage run -m unittest discover -s tests -v
+                  coverage xml -i -o coverage.xml || true
+                else
+                  python -m unittest discover -s tests -v
+                fi
+              fi
+            fi
+          else
+            echo "No tests found (no tests/ dir, no tests/**/*.py, no **/test_*.py). Skipping test step."
+          fi
+
+      - name: Collect test artifacts
         if: always()
         uses: actions/upload-artifact@v4
         with:
