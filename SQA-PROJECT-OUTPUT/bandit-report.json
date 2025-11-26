@@ -1,0 +1,1026 @@
+{
+  "errors": [
+    {
+      "filename": "./fuzz_artifacts/tmp_bad_0.py",
+      "reason": "syntax error while parsing AST from file"
+    },
+    {
+      "filename": "./fuzz_artifacts/tmp_bad_1.py",
+      "reason": "syntax error while parsing AST from file"
+    },
+    {
+      "filename": "./fuzz_artifacts/tmp_bad_11.py",
+      "reason": "syntax error while parsing AST from file"
+    },
+    {
+      "filename": "./fuzz_artifacts/tmp_bad_14.py",
+      "reason": "syntax error while parsing AST from file"
+    },
+    {
+      "filename": "./fuzz_artifacts/tmp_bad_16.py",
+      "reason": "syntax error while parsing AST from file"
+    },
+    {
+      "filename": "./fuzz_artifacts/tmp_bad_17.py",
+      "reason": "syntax error while parsing AST from file"
+    },
+    {
+      "filename": "./fuzz_artifacts/tmp_bad_2.py",
+      "reason": "syntax error while parsing AST from file"
+    },
+    {
+      "filename": "./fuzz_artifacts/tmp_bad_20.py",
+      "reason": "syntax error while parsing AST from file"
+    },
+    {
+      "filename": "./fuzz_artifacts/tmp_bad_21.py",
+      "reason": "syntax error while parsing AST from file"
+    },
+    {
+      "filename": "./fuzz_artifacts/tmp_bad_22.py",
+      "reason": "syntax error while parsing AST from file"
+    },
+    {
+      "filename": "./fuzz_artifacts/tmp_bad_23.py",
+      "reason": "syntax error while parsing AST from file"
+    },
+    {
+      "filename": "./fuzz_artifacts/tmp_bad_24.py",
+      "reason": "syntax error while parsing AST from file"
+    },
+    {
+      "filename": "./fuzz_artifacts/tmp_bad_26.py",
+      "reason": "syntax error while parsing AST from file"
+    },
+    {
+      "filename": "./fuzz_artifacts/tmp_bad_27.py",
+      "reason": "syntax error while parsing AST from file"
+    },
+    {
+      "filename": "./fuzz_artifacts/tmp_bad_28.py",
+      "reason": "syntax error while parsing AST from file"
+    },
+    {
+      "filename": "./fuzz_artifacts/tmp_bad_3.py",
+      "reason": "syntax error while parsing AST from file"
+    },
+    {
+      "filename": "./fuzz_artifacts/tmp_bad_31.py",
+      "reason": "syntax error while parsing AST from file"
+    },
+    {
+      "filename": "./fuzz_artifacts/tmp_bad_32.py",
+      "reason": "syntax error while parsing AST from file"
+    },
+    {
+      "filename": "./fuzz_artifacts/tmp_bad_34.py",
+      "reason": "syntax error while parsing AST from file"
+    },
+    {
+      "filename": "./fuzz_artifacts/tmp_bad_35.py",
+      "reason": "syntax error while parsing AST from file"
+    },
+    {
+      "filename": "./fuzz_artifacts/tmp_bad_36.py",
+      "reason": "syntax error while parsing AST from file"
+    },
+    {
+      "filename": "./fuzz_artifacts/tmp_bad_37.py",
+      "reason": "syntax error while parsing AST from file"
+    },
+    {
+      "filename": "./fuzz_artifacts/tmp_bad_38.py",
+      "reason": "syntax error while parsing AST from file"
+    },
+    {
+      "filename": "./fuzz_artifacts/tmp_bad_39.py",
+      "reason": "syntax error while parsing AST from file"
+    },
+    {
+      "filename": "./fuzz_artifacts/tmp_bad_4.py",
+      "reason": "syntax error while parsing AST from file"
+    },
+    {
+      "filename": "./fuzz_artifacts/tmp_bad_5.py",
+      "reason": "syntax error while parsing AST from file"
+    },
+    {
+      "filename": "./fuzz_artifacts/tmp_bad_6.py",
+      "reason": "syntax error while parsing AST from file"
+    },
+    {
+      "filename": "./fuzz_artifacts/tmp_bad_7.py",
+      "reason": "syntax error while parsing AST from file"
+    },
+    {
+      "filename": "./fuzz_artifacts/tmp_bad_8.py",
+      "reason": "syntax error while parsing AST from file"
+    },
+    {
+      "filename": "./fuzz_artifacts/tmp_bad_9.py",
+      "reason": "syntax error while parsing AST from file"
+    },
+    {
+      "filename": "./fuzz_artifacts/tmp_fuzz1.py",
+      "reason": "syntax error while parsing AST from file"
+    },
+    {
+      "filename": "./fuzz_artifacts/tmp_fuzz2.py",
+      "reason": "syntax error while parsing AST from file"
+    }
+  ],
+  "generated_at": "2025-11-26T15:09:17Z",
+  "metrics": {
+    "./FAME-ML/constants.py": {
+      "CONFIDENCE.HIGH": 0,
+      "CONFIDENCE.LOW": 0,
+      "CONFIDENCE.MEDIUM": 0,
+      "CONFIDENCE.UNDEFINED": 0,
+      "SEVERITY.HIGH": 0,
+      "SEVERITY.LOW": 0,
+      "SEVERITY.MEDIUM": 0,
+      "SEVERITY.UNDEFINED": 0,
+      "loc": 191,
+      "nosec": 0,
+      "skipped_tests": 0
+    },
+    "./FAME-ML/lint_engine.py": {
+      "CONFIDENCE.HIGH": 0,
+      "CONFIDENCE.LOW": 0,
+      "CONFIDENCE.MEDIUM": 0,
+      "CONFIDENCE.UNDEFINED": 0,
+      "SEVERITY.HIGH": 0,
+      "SEVERITY.LOW": 0,
+      "SEVERITY.MEDIUM": 0,
+      "SEVERITY.UNDEFINED": 0,
+      "loc": 541,
+      "nosec": 0,
+      "skipped_tests": 0
+    },
+    "./FAME-ML/main.py": {
+      "CONFIDENCE.HIGH": 0,
+      "CONFIDENCE.LOW": 0,
+      "CONFIDENCE.MEDIUM": 0,
+      "CONFIDENCE.UNDEFINED": 0,
+      "SEVERITY.HIGH": 0,
+      "SEVERITY.LOW": 0,
+      "SEVERITY.MEDIUM": 0,
+      "SEVERITY.UNDEFINED": 0,
+      "loc": 104,
+      "nosec": 0,
+      "skipped_tests": 0
+    },
+    "./FAME-ML/py_parser.py": {
+      "CONFIDENCE.HIGH": 6,
+      "CONFIDENCE.LOW": 0,
+      "CONFIDENCE.MEDIUM": 0,
+      "CONFIDENCE.UNDEFINED": 0,
+      "SEVERITY.HIGH": 0,
+      "SEVERITY.LOW": 6,
+      "SEVERITY.MEDIUM": 0,
+      "SEVERITY.UNDEFINED": 0,
+      "loc": 477,
+      "nosec": 0,
+      "skipped_tests": 0
+    },
+    "./empirical/dataset.stats.py": {
+      "CONFIDENCE.HIGH": 3,
+      "CONFIDENCE.LOW": 0,
+      "CONFIDENCE.MEDIUM": 0,
+      "CONFIDENCE.UNDEFINED": 0,
+      "SEVERITY.HIGH": 0,
+      "SEVERITY.LOW": 3,
+      "SEVERITY.MEDIUM": 0,
+      "SEVERITY.UNDEFINED": 0,
+      "loc": 204,
+      "nosec": 0,
+      "skipped_tests": 0
+    },
+    "./empirical/frequency.py": {
+      "CONFIDENCE.HIGH": 0,
+      "CONFIDENCE.LOW": 0,
+      "CONFIDENCE.MEDIUM": 0,
+      "CONFIDENCE.UNDEFINED": 0,
+      "SEVERITY.HIGH": 0,
+      "SEVERITY.LOW": 0,
+      "SEVERITY.MEDIUM": 0,
+      "SEVERITY.UNDEFINED": 0,
+      "loc": 79,
+      "nosec": 0,
+      "skipped_tests": 0
+    },
+    "./empirical/report.py": {
+      "CONFIDENCE.HIGH": 0,
+      "CONFIDENCE.LOW": 0,
+      "CONFIDENCE.MEDIUM": 0,
+      "CONFIDENCE.UNDEFINED": 0,
+      "SEVERITY.HIGH": 0,
+      "SEVERITY.LOW": 0,
+      "SEVERITY.MEDIUM": 0,
+      "SEVERITY.UNDEFINED": 0,
+      "loc": 86,
+      "nosec": 0,
+      "skipped_tests": 0
+    },
+    "./fuzz.py": {
+      "CONFIDENCE.HIGH": 9,
+      "CONFIDENCE.LOW": 0,
+      "CONFIDENCE.MEDIUM": 0,
+      "CONFIDENCE.UNDEFINED": 0,
+      "SEVERITY.HIGH": 0,
+      "SEVERITY.LOW": 9,
+      "SEVERITY.MEDIUM": 0,
+      "SEVERITY.UNDEFINED": 0,
+      "loc": 123,
+      "nosec": 0,
+      "skipped_tests": 0
+    },
+    "./fuzz_artifacts/tmp_bad_0.py": {
+      "loc": 1,
+      "nosec": 0,
+      "skipped_tests": 0
+    },
+    "./fuzz_artifacts/tmp_bad_1.py": {
+      "loc": 1,
+      "nosec": 0,
+      "skipped_tests": 0
+    },
+    "./fuzz_artifacts/tmp_bad_11.py": {
+      "loc": 1,
+      "nosec": 0,
+      "skipped_tests": 0
+    },
+    "./fuzz_artifacts/tmp_bad_14.py": {
+      "loc": 1,
+      "nosec": 0,
+      "skipped_tests": 0
+    },
+    "./fuzz_artifacts/tmp_bad_16.py": {
+      "loc": 1,
+      "nosec": 0,
+      "skipped_tests": 0
+    },
+    "./fuzz_artifacts/tmp_bad_17.py": {
+      "loc": 1,
+      "nosec": 0,
+      "skipped_tests": 0
+    },
+    "./fuzz_artifacts/tmp_bad_2.py": {
+      "loc": 1,
+      "nosec": 0,
+      "skipped_tests": 0
+    },
+    "./fuzz_artifacts/tmp_bad_20.py": {
+      "loc": 1,
+      "nosec": 0,
+      "skipped_tests": 0
+    },
+    "./fuzz_artifacts/tmp_bad_21.py": {
+      "loc": 1,
+      "nosec": 0,
+      "skipped_tests": 0
+    },
+    "./fuzz_artifacts/tmp_bad_22.py": {
+      "loc": 1,
+      "nosec": 0,
+      "skipped_tests": 0
+    },
+    "./fuzz_artifacts/tmp_bad_23.py": {
+      "loc": 1,
+      "nosec": 0,
+      "skipped_tests": 0
+    },
+    "./fuzz_artifacts/tmp_bad_24.py": {
+      "loc": 1,
+      "nosec": 0,
+      "skipped_tests": 0
+    },
+    "./fuzz_artifacts/tmp_bad_26.py": {
+      "loc": 1,
+      "nosec": 0,
+      "skipped_tests": 0
+    },
+    "./fuzz_artifacts/tmp_bad_27.py": {
+      "loc": 1,
+      "nosec": 0,
+      "skipped_tests": 0
+    },
+    "./fuzz_artifacts/tmp_bad_28.py": {
+      "loc": 1,
+      "nosec": 0,
+      "skipped_tests": 0
+    },
+    "./fuzz_artifacts/tmp_bad_3.py": {
+      "loc": 1,
+      "nosec": 0,
+      "skipped_tests": 0
+    },
+    "./fuzz_artifacts/tmp_bad_31.py": {
+      "loc": 1,
+      "nosec": 0,
+      "skipped_tests": 0
+    },
+    "./fuzz_artifacts/tmp_bad_32.py": {
+      "loc": 1,
+      "nosec": 0,
+      "skipped_tests": 0
+    },
+    "./fuzz_artifacts/tmp_bad_34.py": {
+      "loc": 1,
+      "nosec": 0,
+      "skipped_tests": 0
+    },
+    "./fuzz_artifacts/tmp_bad_35.py": {
+      "loc": 1,
+      "nosec": 0,
+      "skipped_tests": 0
+    },
+    "./fuzz_artifacts/tmp_bad_36.py": {
+      "loc": 1,
+      "nosec": 0,
+      "skipped_tests": 0
+    },
+    "./fuzz_artifacts/tmp_bad_37.py": {
+      "loc": 1,
+      "nosec": 0,
+      "skipped_tests": 0
+    },
+    "./fuzz_artifacts/tmp_bad_38.py": {
+      "loc": 1,
+      "nosec": 0,
+      "skipped_tests": 0
+    },
+    "./fuzz_artifacts/tmp_bad_39.py": {
+      "loc": 1,
+      "nosec": 0,
+      "skipped_tests": 0
+    },
+    "./fuzz_artifacts/tmp_bad_4.py": {
+      "loc": 1,
+      "nosec": 0,
+      "skipped_tests": 0
+    },
+    "./fuzz_artifacts/tmp_bad_5.py": {
+      "loc": 1,
+      "nosec": 0,
+      "skipped_tests": 0
+    },
+    "./fuzz_artifacts/tmp_bad_6.py": {
+      "loc": 1,
+      "nosec": 0,
+      "skipped_tests": 0
+    },
+    "./fuzz_artifacts/tmp_bad_7.py": {
+      "loc": 1,
+      "nosec": 0,
+      "skipped_tests": 0
+    },
+    "./fuzz_artifacts/tmp_bad_8.py": {
+      "loc": 1,
+      "nosec": 0,
+      "skipped_tests": 0
+    },
+    "./fuzz_artifacts/tmp_bad_9.py": {
+      "loc": 1,
+      "nosec": 0,
+      "skipped_tests": 0
+    },
+    "./fuzz_artifacts/tmp_fuzz1.py": {
+      "loc": 1,
+      "nosec": 0,
+      "skipped_tests": 0
+    },
+    "./fuzz_artifacts/tmp_fuzz2.py": {
+      "loc": 9,
+      "nosec": 0,
+      "skipped_tests": 0
+    },
+    "./mining/constants.py": {
+      "CONFIDENCE.HIGH": 0,
+      "CONFIDENCE.LOW": 0,
+      "CONFIDENCE.MEDIUM": 0,
+      "CONFIDENCE.UNDEFINED": 0,
+      "SEVERITY.HIGH": 0,
+      "SEVERITY.LOW": 0,
+      "SEVERITY.MEDIUM": 0,
+      "SEVERITY.UNDEFINED": 0,
+      "loc": 187,
+      "nosec": 0,
+      "skipped_tests": 0
+    },
+    "./mining/git.repo.miner.py": {
+      "CONFIDENCE.HIGH": 4,
+      "CONFIDENCE.LOW": 0,
+      "CONFIDENCE.MEDIUM": 0,
+      "CONFIDENCE.UNDEFINED": 0,
+      "SEVERITY.HIGH": 0,
+      "SEVERITY.LOW": 4,
+      "SEVERITY.MEDIUM": 0,
+      "SEVERITY.UNDEFINED": 0,
+      "loc": 175,
+      "nosec": 0,
+      "skipped_tests": 0
+    },
+    "./mining/log.op.miner.py": {
+      "CONFIDENCE.HIGH": 0,
+      "CONFIDENCE.LOW": 0,
+      "CONFIDENCE.MEDIUM": 0,
+      "CONFIDENCE.UNDEFINED": 0,
+      "SEVERITY.HIGH": 0,
+      "SEVERITY.LOW": 0,
+      "SEVERITY.MEDIUM": 0,
+      "SEVERITY.UNDEFINED": 0,
+      "loc": 141,
+      "nosec": 0,
+      "skipped_tests": 0
+    },
+    "./mining/mining.py": {
+      "CONFIDENCE.HIGH": 5,
+      "CONFIDENCE.LOW": 0,
+      "CONFIDENCE.MEDIUM": 0,
+      "CONFIDENCE.UNDEFINED": 0,
+      "SEVERITY.HIGH": 0,
+      "SEVERITY.LOW": 5,
+      "SEVERITY.MEDIUM": 0,
+      "SEVERITY.UNDEFINED": 0,
+      "loc": 171,
+      "nosec": 0,
+      "skipped_tests": 0
+    },
+    "./mining/test_git_repo_miner.py": {
+      "CONFIDENCE.HIGH": 0,
+      "CONFIDENCE.LOW": 0,
+      "CONFIDENCE.MEDIUM": 0,
+      "CONFIDENCE.UNDEFINED": 0,
+      "SEVERITY.HIGH": 0,
+      "SEVERITY.LOW": 0,
+      "SEVERITY.MEDIUM": 0,
+      "SEVERITY.UNDEFINED": 0,
+      "loc": 61,
+      "nosec": 0,
+      "skipped_tests": 0
+    },
+    "_totals": {
+      "CONFIDENCE.HIGH": 27,
+      "CONFIDENCE.LOW": 0,
+      "CONFIDENCE.MEDIUM": 0,
+      "CONFIDENCE.UNDEFINED": 0,
+      "SEVERITY.HIGH": 0,
+      "SEVERITY.LOW": 27,
+      "SEVERITY.MEDIUM": 0,
+      "SEVERITY.UNDEFINED": 0,
+      "loc": 2580,
+      "nosec": 0,
+      "skipped_tests": 0
+    }
+  },
+  "results": [
+    {
+      "code": "245             walker = ast.walk(stmt_)\n246         except Exception:\n247             continue\n248 \n",
+      "col_offset": 8,
+      "end_col_offset": 20,
+      "filename": "./FAME-ML/py_parser.py",
+      "issue_confidence": "HIGH",
+      "issue_cwe": {
+        "id": 703,
+        "link": "https://cwe.mitre.org/data/definitions/703.html"
+      },
+      "issue_severity": "LOW",
+      "issue_text": "Try, Except, Continue detected.",
+      "line_number": 246,
+      "line_range": [
+        246,
+        247
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/1.9.2/plugins/b112_try_except_continue.html",
+      "test_id": "B112",
+      "test_name": "try_except_continue"
+    },
+    {
+      "code": "291                             call_arg_list.append((funcArg.s, constants.FUNC_CALL_ARG_STR + str(idx_offset)))\n292                     except Exception:\n293                         # Skips malformed args\n294                         continue\n295 \n",
+      "col_offset": 20,
+      "end_col_offset": 32,
+      "filename": "./FAME-ML/py_parser.py",
+      "issue_confidence": "HIGH",
+      "issue_cwe": {
+        "id": 703,
+        "link": "https://cwe.mitre.org/data/definitions/703.html"
+      },
+      "issue_severity": "LOW",
+      "issue_text": "Try, Except, Continue detected.",
+      "line_number": 292,
+      "line_range": [
+        292,
+        293,
+        294
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/1.9.2/plugins/b112_try_except_continue.html",
+      "test_id": "B112",
+      "test_name": "try_except_continue"
+    },
+    {
+      "code": "336                                 call_arg_list.append((base.id, constants.FUNC_CALL_ARG_STR + str(idx_offset)))\n337                     except Exception:\n338                         continue\n339 \n",
+      "col_offset": 20,
+      "end_col_offset": 32,
+      "filename": "./FAME-ML/py_parser.py",
+      "issue_confidence": "HIGH",
+      "issue_cwe": {
+        "id": 703,
+        "link": "https://cwe.mitre.org/data/definitions/703.html"
+      },
+      "issue_severity": "LOW",
+      "issue_text": "Try, Except, Continue detected.",
+      "line_number": 337,
+      "line_range": [
+        337,
+        338
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/1.9.2/plugins/b112_try_except_continue.html",
+      "test_id": "B112",
+      "test_name": "try_except_continue"
+    },
+    {
+      "code": "363             walker = ast.walk(stmt_)\n364         except Exception:\n365             continue\n366 \n",
+      "col_offset": 8,
+      "end_col_offset": 20,
+      "filename": "./FAME-ML/py_parser.py",
+      "issue_confidence": "HIGH",
+      "issue_cwe": {
+        "id": 703,
+        "link": "https://cwe.mitre.org/data/definitions/703.html"
+      },
+      "issue_severity": "LOW",
+      "issue_text": "Try, Except, Continue detected.",
+      "line_number": 364,
+      "line_range": [
+        364,
+        365
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/1.9.2/plugins/b112_try_except_continue.html",
+      "test_id": "B112",
+      "test_name": "try_except_continue"
+    },
+    {
+      "code": "401                             call_arg_list.append((arg.s, constants.INDEX_KW + str(idx_offset)))\n402                     except Exception:\n403                         continue\n404 \n",
+      "col_offset": 20,
+      "end_col_offset": 32,
+      "filename": "./FAME-ML/py_parser.py",
+      "issue_confidence": "HIGH",
+      "issue_cwe": {
+        "id": 703,
+        "link": "https://cwe.mitre.org/data/definitions/703.html"
+      },
+      "issue_severity": "LOW",
+      "issue_text": "Try, Except, Continue detected.",
+      "line_number": 402,
+      "line_range": [
+        402,
+        403
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/1.9.2/plugins/b112_try_except_continue.html",
+      "test_id": "B112",
+      "test_name": "try_except_continue"
+    },
+    {
+      "code": "434                             call_arg_list.append((arg.s, constants.INDEX_KW + str(idx_offset)))\n435                     except Exception:\n436                         continue\n437 \n",
+      "col_offset": 20,
+      "end_col_offset": 32,
+      "filename": "./FAME-ML/py_parser.py",
+      "issue_confidence": "HIGH",
+      "issue_cwe": {
+        "id": 703,
+        "link": "https://cwe.mitre.org/data/definitions/703.html"
+      },
+      "issue_severity": "LOW",
+      "issue_text": "Try, Except, Continue detected.",
+      "line_number": 435,
+      "line_range": [
+        435,
+        436
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/1.9.2/plugins/b112_try_except_continue.html",
+      "test_id": "B112",
+      "test_name": "try_except_continue"
+    },
+    {
+      "code": "11 from datetime import datetime\n12 import subprocess\n13 from collections import Counter \n",
+      "col_offset": 0,
+      "end_col_offset": 17,
+      "filename": "./empirical/dataset.stats.py",
+      "issue_confidence": "HIGH",
+      "issue_cwe": {
+        "id": 78,
+        "link": "https://cwe.mitre.org/data/definitions/78.html"
+      },
+      "issue_severity": "LOW",
+      "issue_text": "Consider possible security implications associated with the subprocess module.",
+      "line_number": 12,
+      "line_range": [
+        12
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/1.9.2/blacklists/blacklist_imports.html#b404-import-subprocess",
+      "test_id": "B404",
+      "test_name": "blacklist"
+    },
+    {
+      "code": "58 \n59     author_emails = str(subprocess.check_output(['bash','-c', command2Run]))\n60     author_emails = author_emails.split('\\n')\n",
+      "col_offset": 24,
+      "end_col_offset": 75,
+      "filename": "./empirical/dataset.stats.py",
+      "issue_confidence": "HIGH",
+      "issue_cwe": {
+        "id": 78,
+        "link": "https://cwe.mitre.org/data/definitions/78.html"
+      },
+      "issue_severity": "LOW",
+      "issue_text": "Starting a process with a partial executable path",
+      "line_number": 59,
+      "line_range": [
+        59
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/1.9.2/plugins/b607_start_process_with_partial_path.html",
+      "test_id": "B607",
+      "test_name": "start_process_with_partial_path"
+    },
+    {
+      "code": "58 \n59     author_emails = str(subprocess.check_output(['bash','-c', command2Run]))\n60     author_emails = author_emails.split('\\n')\n",
+      "col_offset": 24,
+      "end_col_offset": 75,
+      "filename": "./empirical/dataset.stats.py",
+      "issue_confidence": "HIGH",
+      "issue_cwe": {
+        "id": 78,
+        "link": "https://cwe.mitre.org/data/definitions/78.html"
+      },
+      "issue_severity": "LOW",
+      "issue_text": "subprocess call - check for execution of untrusted input.",
+      "line_number": 59,
+      "line_range": [
+        59
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/1.9.2/plugins/b603_subprocess_without_shell_equals_true.html",
+      "test_id": "B603",
+      "test_name": "subprocess_without_shell_equals_true"
+    },
+    {
+      "code": "88     for i in range(40):\n89         if random.random() < 0.5:\n90             path = ARTIFACT_DIR / f\"tmp_bad_{i}.py\"\n",
+      "col_offset": 11,
+      "end_col_offset": 26,
+      "filename": "./fuzz.py",
+      "issue_confidence": "HIGH",
+      "issue_cwe": {
+        "id": 330,
+        "link": "https://cwe.mitre.org/data/definitions/330.html"
+      },
+      "issue_severity": "LOW",
+      "issue_text": "Standard pseudo-random generators are not suitable for security/cryptographic purposes.",
+      "line_number": 89,
+      "line_range": [
+        89
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/1.9.2/blacklists/blacklist_calls.html#b311-random",
+      "test_id": "B311",
+      "test_name": "blacklist"
+    },
+    {
+      "code": "90             path = ARTIFACT_DIR / f\"tmp_bad_{i}.py\"\n91             random_text = \"\".join(random.choice(\"abc{}()[]\") for _ in range(300))\n92             path.write_text(random_text)\n",
+      "col_offset": 34,
+      "end_col_offset": 60,
+      "filename": "./fuzz.py",
+      "issue_confidence": "HIGH",
+      "issue_cwe": {
+        "id": 330,
+        "link": "https://cwe.mitre.org/data/definitions/330.html"
+      },
+      "issue_severity": "LOW",
+      "issue_text": "Standard pseudo-random generators are not suitable for security/cryptographic purposes.",
+      "line_number": 91,
+      "line_range": [
+        91
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/1.9.2/blacklists/blacklist_calls.html#b311-random",
+      "test_id": "B311",
+      "test_name": "blacklist"
+    },
+    {
+      "code": "93         else:\n94             path = ARTIFACT_DIR / f\"nonexistent_{random.randint(1000,9999)}.py\"\n95 \n",
+      "col_offset": 49,
+      "end_col_offset": 74,
+      "filename": "./fuzz.py",
+      "issue_confidence": "HIGH",
+      "issue_cwe": {
+        "id": 330,
+        "link": "https://cwe.mitre.org/data/definitions/330.html"
+      },
+      "issue_severity": "LOW",
+      "issue_text": "Standard pseudo-random generators are not suitable for security/cryptographic purposes.",
+      "line_number": 94,
+      "line_range": [
+        94
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/1.9.2/blacklists/blacklist_calls.html#b311-random",
+      "test_id": "B311",
+      "test_name": "blacklist"
+    },
+    {
+      "code": "109         content = \"\\n\".join(\n110             \"\".join(random.choice(charset) for _ in range(random.randint(5, 80)))\n111             for _ in range(random.randint(1, 10))\n",
+      "col_offset": 20,
+      "end_col_offset": 42,
+      "filename": "./fuzz.py",
+      "issue_confidence": "HIGH",
+      "issue_cwe": {
+        "id": 330,
+        "link": "https://cwe.mitre.org/data/definitions/330.html"
+      },
+      "issue_severity": "LOW",
+      "issue_text": "Standard pseudo-random generators are not suitable for security/cryptographic purposes.",
+      "line_number": 110,
+      "line_range": [
+        110
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/1.9.2/blacklists/blacklist_calls.html#b311-random",
+      "test_id": "B311",
+      "test_name": "blacklist"
+    },
+    {
+      "code": "109         content = \"\\n\".join(\n110             \"\".join(random.choice(charset) for _ in range(random.randint(5, 80)))\n111             for _ in range(random.randint(1, 10))\n",
+      "col_offset": 58,
+      "end_col_offset": 79,
+      "filename": "./fuzz.py",
+      "issue_confidence": "HIGH",
+      "issue_cwe": {
+        "id": 330,
+        "link": "https://cwe.mitre.org/data/definitions/330.html"
+      },
+      "issue_severity": "LOW",
+      "issue_text": "Standard pseudo-random generators are not suitable for security/cryptographic purposes.",
+      "line_number": 110,
+      "line_range": [
+        110
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/1.9.2/blacklists/blacklist_calls.html#b311-random",
+      "test_id": "B311",
+      "test_name": "blacklist"
+    },
+    {
+      "code": "110             \"\".join(random.choice(charset) for _ in range(random.randint(5, 80)))\n111             for _ in range(random.randint(1, 10))\n112         )\n",
+      "col_offset": 27,
+      "end_col_offset": 48,
+      "filename": "./fuzz.py",
+      "issue_confidence": "HIGH",
+      "issue_cwe": {
+        "id": 330,
+        "link": "https://cwe.mitre.org/data/definitions/330.html"
+      },
+      "issue_severity": "LOW",
+      "issue_text": "Standard pseudo-random generators are not suitable for security/cryptographic purposes.",
+      "line_number": 111,
+      "line_range": [
+        111
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/1.9.2/blacklists/blacklist_calls.html#b311-random",
+      "test_id": "B311",
+      "test_name": "blacklist"
+    },
+    {
+      "code": "130         content = \"\\n\".join(\n131             \"\".join(random.choice(tokens) for _ in range(random.randint(3, 15)))\n132             for _ in range(random.randint(1, 10))\n",
+      "col_offset": 20,
+      "end_col_offset": 41,
+      "filename": "./fuzz.py",
+      "issue_confidence": "HIGH",
+      "issue_cwe": {
+        "id": 330,
+        "link": "https://cwe.mitre.org/data/definitions/330.html"
+      },
+      "issue_severity": "LOW",
+      "issue_text": "Standard pseudo-random generators are not suitable for security/cryptographic purposes.",
+      "line_number": 131,
+      "line_range": [
+        131
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/1.9.2/blacklists/blacklist_calls.html#b311-random",
+      "test_id": "B311",
+      "test_name": "blacklist"
+    },
+    {
+      "code": "130         content = \"\\n\".join(\n131             \"\".join(random.choice(tokens) for _ in range(random.randint(3, 15)))\n132             for _ in range(random.randint(1, 10))\n",
+      "col_offset": 57,
+      "end_col_offset": 78,
+      "filename": "./fuzz.py",
+      "issue_confidence": "HIGH",
+      "issue_cwe": {
+        "id": 330,
+        "link": "https://cwe.mitre.org/data/definitions/330.html"
+      },
+      "issue_severity": "LOW",
+      "issue_text": "Standard pseudo-random generators are not suitable for security/cryptographic purposes.",
+      "line_number": 131,
+      "line_range": [
+        131
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/1.9.2/blacklists/blacklist_calls.html#b311-random",
+      "test_id": "B311",
+      "test_name": "blacklist"
+    },
+    {
+      "code": "131             \"\".join(random.choice(tokens) for _ in range(random.randint(3, 15)))\n132             for _ in range(random.randint(1, 10))\n133         )\n",
+      "col_offset": 27,
+      "end_col_offset": 48,
+      "filename": "./fuzz.py",
+      "issue_confidence": "HIGH",
+      "issue_cwe": {
+        "id": 330,
+        "link": "https://cwe.mitre.org/data/definitions/330.html"
+      },
+      "issue_severity": "LOW",
+      "issue_text": "Standard pseudo-random generators are not suitable for security/cryptographic purposes.",
+      "line_number": 132,
+      "line_range": [
+        132
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/1.9.2/blacklists/blacklist_calls.html#b311-random",
+      "test_id": "B311",
+      "test_name": "blacklist"
+    },
+    {
+      "code": "33 import csv \n34 import subprocess\n35 import numpy as np\n",
+      "col_offset": 0,
+      "end_col_offset": 17,
+      "filename": "./mining/git.repo.miner.py",
+      "issue_confidence": "HIGH",
+      "issue_cwe": {
+        "id": 78,
+        "link": "https://cwe.mitre.org/data/definitions/78.html"
+      },
+      "issue_severity": "LOW",
+      "issue_text": "Consider possible security implications associated with the subprocess module.",
+      "line_number": 34,
+      "line_range": [
+        34
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/1.9.2/blacklists/blacklist_imports.html#b404-import-subprocess",
+      "test_id": "B404",
+      "test_name": "blacklist"
+    },
+    {
+      "code": "38 from git import exc \n39 from xml.dom import minidom\n40 from xml.parsers.expat import ExpatError\n",
+      "col_offset": 0,
+      "end_col_offset": 27,
+      "filename": "./mining/git.repo.miner.py",
+      "issue_confidence": "HIGH",
+      "issue_cwe": {
+        "id": 20,
+        "link": "https://cwe.mitre.org/data/definitions/20.html"
+      },
+      "issue_severity": "LOW",
+      "issue_text": "Using minidom to parse untrusted XML data is known to be vulnerable to XML attacks. Replace minidom with the equivalent defusedxml package, or make sure defusedxml.defuse_stdlib() is called.",
+      "line_number": 39,
+      "line_range": [
+        39
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/1.9.2/blacklists/blacklist_imports.html#b408-import-xml-minidom",
+      "test_id": "B408",
+      "test_name": "blacklist"
+    },
+    {
+      "code": "79     try:\n80         subprocess.check_output(['bash','-c', cmd_])    \n81         status = 'success'\n",
+      "col_offset": 8,
+      "end_col_offset": 52,
+      "filename": "./mining/git.repo.miner.py",
+      "issue_confidence": "HIGH",
+      "issue_cwe": {
+        "id": 78,
+        "link": "https://cwe.mitre.org/data/definitions/78.html"
+      },
+      "issue_severity": "LOW",
+      "issue_text": "Starting a process with a partial executable path",
+      "line_number": 80,
+      "line_range": [
+        80
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/1.9.2/plugins/b607_start_process_with_partial_path.html",
+      "test_id": "B607",
+      "test_name": "start_process_with_partial_path"
+    },
+    {
+      "code": "79     try:\n80         subprocess.check_output(['bash','-c', cmd_])    \n81         status = 'success'\n",
+      "col_offset": 8,
+      "end_col_offset": 52,
+      "filename": "./mining/git.repo.miner.py",
+      "issue_confidence": "HIGH",
+      "issue_cwe": {
+        "id": 78,
+        "link": "https://cwe.mitre.org/data/definitions/78.html"
+      },
+      "issue_severity": "LOW",
+      "issue_text": "subprocess call - check for execution of untrusted input.",
+      "line_number": 80,
+      "line_range": [
+        80
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/1.9.2/plugins/b603_subprocess_without_shell_equals_true.html",
+      "test_id": "B603",
+      "test_name": "subprocess_without_shell_equals_true"
+    },
+    {
+      "code": "6 from datetime import datetime\n7 import subprocess\n8 import shutil\n",
+      "col_offset": 0,
+      "end_col_offset": 17,
+      "filename": "./mining/mining.py",
+      "issue_confidence": "HIGH",
+      "issue_cwe": {
+        "id": 78,
+        "link": "https://cwe.mitre.org/data/definitions/78.html"
+      },
+      "issue_severity": "LOW",
+      "issue_text": "Consider possible security implications associated with the subprocess module.",
+      "line_number": 7,
+      "line_range": [
+        7
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/1.9.2/blacklists/blacklist_imports.html#b404-import-subprocess",
+      "test_id": "B404",
+      "test_name": "blacklist"
+    },
+    {
+      "code": "42     try:\n43        subprocess.check_output(['bash','-c', cmd_])    \n44     except subprocess.CalledProcessError:\n",
+      "col_offset": 7,
+      "end_col_offset": 51,
+      "filename": "./mining/mining.py",
+      "issue_confidence": "HIGH",
+      "issue_cwe": {
+        "id": 78,
+        "link": "https://cwe.mitre.org/data/definitions/78.html"
+      },
+      "issue_severity": "LOW",
+      "issue_text": "Starting a process with a partial executable path",
+      "line_number": 43,
+      "line_range": [
+        43
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/1.9.2/plugins/b607_start_process_with_partial_path.html",
+      "test_id": "B607",
+      "test_name": "start_process_with_partial_path"
+    },
+    {
+      "code": "42     try:\n43        subprocess.check_output(['bash','-c', cmd_])    \n44     except subprocess.CalledProcessError:\n",
+      "col_offset": 7,
+      "end_col_offset": 51,
+      "filename": "./mining/mining.py",
+      "issue_confidence": "HIGH",
+      "issue_cwe": {
+        "id": 78,
+        "link": "https://cwe.mitre.org/data/definitions/78.html"
+      },
+      "issue_severity": "LOW",
+      "issue_text": "subprocess call - check for execution of untrusted input.",
+      "line_number": 43,
+      "line_range": [
+        43
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/1.9.2/plugins/b603_subprocess_without_shell_equals_true.html",
+      "test_id": "B603",
+      "test_name": "subprocess_without_shell_equals_true"
+    },
+    {
+      "code": "80 \n81     author_emails = str(subprocess.check_output(['bash','-c', command2Run]))\n82     author_emails = author_emails.split('\\n')\n",
+      "col_offset": 24,
+      "end_col_offset": 75,
+      "filename": "./mining/mining.py",
+      "issue_confidence": "HIGH",
+      "issue_cwe": {
+        "id": 78,
+        "link": "https://cwe.mitre.org/data/definitions/78.html"
+      },
+      "issue_severity": "LOW",
+      "issue_text": "Starting a process with a partial executable path",
+      "line_number": 81,
+      "line_range": [
+        81
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/1.9.2/plugins/b607_start_process_with_partial_path.html",
+      "test_id": "B607",
+      "test_name": "start_process_with_partial_path"
+    },
+    {
+      "code": "80 \n81     author_emails = str(subprocess.check_output(['bash','-c', command2Run]))\n82     author_emails = author_emails.split('\\n')\n",
+      "col_offset": 24,
+      "end_col_offset": 75,
+      "filename": "./mining/mining.py",
+      "issue_confidence": "HIGH",
+      "issue_cwe": {
+        "id": 78,
+        "link": "https://cwe.mitre.org/data/definitions/78.html"
+      },
+      "issue_severity": "LOW",
+      "issue_text": "subprocess call - check for execution of untrusted input.",
+      "line_number": 81,
+      "line_range": [
+        81
+      ],
+      "more_info": "https://bandit.readthedocs.io/en/1.9.2/plugins/b603_subprocess_without_shell_equals_true.html",
+      "test_id": "B603",
+      "test_name": "subprocess_without_shell_equals_true"
+    }
+  ]
+}
