@@ -50,6 +50,11 @@ jobs:
           pip install hypothesis
           pip install gitpython
           pip install pandas numpy
+          pip install flake8 black bandit pylint pytest coverage
+          # Install project dependencies if present
+          if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+          pip install pandas numpy || true
+
 
       - name: Run fuzzing script
         run: |
@@ -61,11 +66,7 @@ jobs:
           name: fuzz_logs
           path: fuzz_crashes.log
           if-no-files-found: ignore
-          pip install flake8 black bandit pylint pytest coverage
-          # Install project dependencies if present
-          if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
-          pip install pandas numpy || true
-
+          
       - name: Lint with flake8
         run: |
           flake8 . --count --select=E9,F63,F7,F82 --show-source --statistics || true
