@@ -56,6 +56,9 @@ jobs:
       - name: Install test & fuzz tools (best-effort)
         run: |
           pip install --upgrade pytest coverage || true
+      - name: Install test & fuzz tools (best-effort)
+        run: |
+          pip install --upgrade pytest coverage hypothesis gitpython pandas numpy || true
 
       - name: Run Fuzz Testing (only if fuzz.py exists)
         run: |
