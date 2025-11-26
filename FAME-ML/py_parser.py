@@ -102,7 +102,7 @@ def getPythonParseObject(pyFile):
     try:
         content = open(pyFile).read()
         logger.debug(f"[getPythonParseObject] File size: {len(content)} characters")
-		
+        content = content.replace('\x00', '')  # Remove null bytes
         full_tree = ast.parse(content)
         logger.info(f"[getPythonParseObject] Parsed successfully: {pyFile}")
         return full_tree

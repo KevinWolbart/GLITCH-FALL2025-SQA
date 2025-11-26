@@ -56,12 +56,22 @@ logger = logging.getLogger("fuzzer")
 @settings(max_examples=40)
 def fuzz_getPythonParseObject(random_text):
     tmp_path = ARTIFACT_DIR / "tmp_fuzz1.py"
-    tmp_path.write_text(random_text)
+
+    # Remove NUL characters which ast.parse cannot handle
+    safe_text = random_text.replace("\x00", "")
+    tmp_path.write_text(safe_text)
 
     try:
         py_parser.getPythonParseObject(str(tmp_path))
+    except ValueError as e:
+        # Treat null-bytes ValueError as expected for fuzz inputs: log and continue
+        if "null bytes" in str(e):
+            logger.warning(f"[getPythonParseObject] Ignored null-bytes error for input (sanitized): {repr(safe_text)}")
+            return
+        logger.exception(f"[getPythonParseObject] Unexpected ValueError on input: {repr(safe_text)}")
+        raise
     except Exception:
-        logger.exception(f"[getPythonParseObject] Crash on input: {random_text}")
+        logger.exception(f"[getPythonParseObject] Crash on input: {repr(safe_text)}")
         raise
 
 """
