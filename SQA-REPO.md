@@ -34,6 +34,16 @@ We refactored existing code to enhance stability and diagnosability using defens
     * `getMLLibraryUsage`
     * `deleteRepos`
 
+### Part 4C — CI/CD Pipeline Architecture
+We formalized the project's build and test process by constructing a dedicated Continuous Integration (CI) pipeline using GitHub Actions.
+
+* **Objectives:** To eliminate "it works on my machine" issues, enforce coding standards automatically, and ensure immediate feedback on code robustness.
+* **Implementation Steps:**
+    * *Workflow Automation:* Defined structured YAML workflows to trigger on every `push` and `pull_request` to the main branch.
+    * *Environment Standardization:* Configured the pipeline to set up a clean Python environment and install specific dependencies from `requirements.txt` for every run.
+    * *Quality Gates:* Integrated static analysis tools (`flake8`, `pylint`) and formatted checks (`black`) to reject commits that do not meet style guidelines before they reach the testing phase.
+    * *Artifact Management:* Configured the pipeline to upload failure logs (e.g., `fuzz_crashes.log`) as accessible artifacts, allowing us to debug remote failures without access to the runner machine.
+
 ---
 
 ## 2. Lessons Learned
@@ -59,3 +69,10 @@ Initial crashes during fuzzing were difficult to diagnose because the generic Py
 Manual testing is prone to "drift"—as time passes, developers stop running local tests before committing.
 * **Lesson:** By integrating `fuzz.py` into GitHub Actions, we enforced a quality gate. The tests run whether we remember them or not.
 * **Takeaway:** Automation creates a "ratchet effect" for quality; once a test is added to the CI pipeline, the code quality can strictly only go up (or stay the same), never down, because regressions are caught immediately.
+
+### The "Hidden Costs" of Automation (CI/CD)
+While automating our tests saved time in the long run, setting up the infrastructure presented unique challenges regarding syntax and environment management.
+* **Lesson:** **YAML is Unforgiving.** Unlike standard code where logic errors might still run, a single indentation error or missing keyword (like forgetting a `run:` tag) in a GitHub Actions workflow causes immediate failure.
+* *Impact:* We learned that CI/CD configuration files are code, not just settings. They require the same iterative debugging and "linting" focus as our Python scripts.
+* **Lesson:** **Clean Room Environment.** Dependencies that existed globally on our local machines were missing in the cloud runner.
+* *Takeaway:* We had to explicitly define every single package dependency. This forced us to sanitize our `requirements.txt`, ultimately making the project more portable for future developers.
