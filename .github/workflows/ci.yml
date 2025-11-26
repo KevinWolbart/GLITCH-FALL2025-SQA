@@ -17,6 +17,32 @@ jobs:
         uses: actions/setup-python@v4
         with:
           python-version: "3.10"
+name: CI
+
+on:
+  push:
+    branches: [ main, master, develop ]
+  pull_request:
+    branches: [ main, master, develop ]
+
+permissions:
+  contents: read
+
+jobs:
+  lint-and-test:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ['3.8', '3.9', '3.10', '3.11']
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Python ${{ matrix.python-version }}
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
 
       - name: Install dependencies
         run: |
@@ -35,3 +61,88 @@ jobs:
           name: fuzz_logs
           path: fuzz_crashes.log
           if-no-files-found: ignore
+          pip install flake8 black bandit pylint pytest coverage
+          # Install project dependencies if present
+          if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+          pip install pandas numpy || true
+
+      - name: Lint with flake8
+        run: |
+          flake8 . --count --select=E9,F63,F7,F82 --show-source --statistics || true
+          flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics || true
+        continue-on-error: true
+
+      - name: Check code formatting with black
+        run: |
+          black --check --diff .
+        continue-on-error: true
+
+      - name: Security check with bandit (fail on MEDIUM/HIGH)
+        run: |
+          set -euo pipefail
+
+          # If bandit is available, run it and produce a JSON report.
+          if command -v bandit >/dev/null 2>&1; then
+            # Run bandit and always attempt to write the JSON report (ignore its exit status so the report is still created)
+            bandit -r . -f json -o bandit-report.json || echo "bandit finished with non-zero status (report saved)"
+            # Print a human readable report to the log (do not let this exit code fail the step)
+            bandit -r . -f screen || true
+
+            # Fail the CI only if any finding has severity MEDIUM or HIGH.
+            # Use a simple grep-based check against the JSON to avoid YAML/heredoc parsing issues.
+            if grep -E '"issue_severity"\s*:\s*"(MEDIUM|HIGH)"' bandit-report.json >/dev/null 2>&1; then
+              echo "Bandit found one or more MEDIUM/HIGH findings. Printing matching entries:"
+              # Print context lines around matches for debugging
+              grep -nE '"issue_severity"\s*:\s*"(MEDIUM|HIGH)"' -n -n bandit-report.json || true
+              echo "Full bandit JSON report saved to $(pwd)/bandit-report.json"
+              exit 1
+            else
+              echo "No MEDIUM/HIGH Bandit findings; continuing."
+            fi
+
+          else
+            # If bandit isn't installed create a placeholder JSON file so artifact upload keeps consistent shape
+            echo '{"errors":"bandit not installed"}' > bandit-report.json
+            echo "bandit not installed; skipping security scan"
+          fi
+      - name: Lint with pylint
+        run: |
+          # Use shell globbing to find python files
+          shopt -s globstar || true
+          files=$(printf "%s\n" **/*.py | sed '/^$/d' || true)
+          if [ -n "$files" ]; then
+            pylint $files --exit-zero --max-line-length=127 || true
+          else
+            echo "No Python files to lint with pylint"
+          fi
+        continue-on-error: true
+
+      - name: Upload bandit results
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: bandit-report-${{ matrix.python-version }}
+          path: bandit-report.json
+
+  code-quality:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.10'
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install radon || true
+
+      - name: Code complexity analysis
+        run: |
+          radon cc . -a -nb || true
+          radon mi . -nb || true
+        continue-on-error: true
