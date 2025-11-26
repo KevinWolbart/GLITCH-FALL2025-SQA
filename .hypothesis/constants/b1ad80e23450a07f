@@ -1,0 +1,4 @@
+# file: /Users/luispostigo/Documents/Auburn_courses/Fall_2025/COMP_6710-Software Quality Assurance/project/GLITCH-FALL2025-SQA/mining/git.repo.miner.py
+# hypothesis_version: 6.148.2
+
+[0.25, 100, '#', '-c', '/', ':::', ':::Deleting ', '@', 'Cloning ', 'LOW_PYTHON_', 'ML_LIBRARY_THRESHOLD', 'NO_FILES', 'REPO', 'REPO_COUNT:', '__main__', 'bash', 'git clone ', 'gym.', 'keras', 'latin-1', 'py', 'pyqlearning', 'r', 'rl_coach', 'sklearn', 'stable_baselines', 'tensorflow', 'tensorforce', 'tf.', 'torch', 'w']
