@@ -45,3 +45,6 @@ We enhanced the robustness of five different methods by integrating defensive pr
 - deleteRepos
 
 These updates prevent crashes on malformed or unexpected input, provide clearer forensic information through logging, and ensure the project behaves correctly under fuzzing and real-world variability.
+
+#### Part 4C — CI/CD Pipeline Architecture
+We formalized the project's build and test process by constructing a dedicated Continuous Integration (CI) pipeline using GitHub Actions.
